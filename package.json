@@ -1,0 +1,44 @@
+{
+  "name": "lowdas",
+  "version": "0.0.1",
+  "description": "A modern JavaScript/Typescript utility library",
+  "main": "./dist/low.es.js",
+  "module": "./dist/low.es.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest ./test",
+    "docs": "typedoc",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "release": "npm run build && npm run docs && npm publish"
+  },
+  "keywords": [
+    "tool",
+    "javascipt",
+    "typescript",
+    "utils",
+    "lowdash"
+  ],
+  "author": "qiyuanluo233",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "babel-preset-latest": "^6.24.1",
+    "docdash": "^1.2.0",
+    "jest": "^26.6.2",
+    "minami": "^1.2.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typedoc": "^0.22.13",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "gl-matrix": "^3.4.3"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
