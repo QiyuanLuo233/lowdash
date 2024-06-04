@@ -11,7 +11,7 @@
  * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
  * method interface of `clear`, `delete`, `get`, `has`, and `set`.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Function
  * @param {Function} func The function to have its output memoized.
  * @param {Function} [resolver] The function to resolve the cache key.

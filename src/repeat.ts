@@ -1,7 +1,7 @@
 /**
  * Repeats the given string `n` times.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to repeat.
  * @param {number} [n=1] The number of times to repeat the string.

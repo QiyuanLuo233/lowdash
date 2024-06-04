@@ -9,7 +9,7 @@ import last from './last.js';
  * by the order they occur in the arrays. The iteratee is invoked with one
  * argument: (value).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Array
  * @param {...Array} [arrays] The arrays to inspect.
  * @param {Function} iteratee The iteratee invoked per element.

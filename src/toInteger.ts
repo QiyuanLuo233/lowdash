@@ -6,7 +6,7 @@ import toFinite from './toFinite.js';
  * **Note:** This method is loosely based on
  * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to convert.
  * @returns {number} Returns the converted integer.

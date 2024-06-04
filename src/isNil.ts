@@ -1,7 +1,7 @@
 /**
  * Checks if `value` is `null` or `undefined`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is nullish, else `false`.

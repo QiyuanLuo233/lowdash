@@ -4,7 +4,7 @@ import isObjectLike from './isObjectLike.js';
 /**
  * Checks if `value` is classified as a boolean primitive or object.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a boolean, else `false`.

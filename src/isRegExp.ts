@@ -8,7 +8,7 @@ const nodeIsRegExp = nodeTypes && nodeTypes.isRegExp;
 /**
  * Checks if `value` is classified as a `RegExp` object.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.

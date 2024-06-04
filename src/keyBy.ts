@@ -7,7 +7,7 @@ import reduce from './reduce.js';
  * each key is the last element responsible for generating the key. The
  * iteratee is invoked with one argument: (value).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} iteratee The iteratee to transform keys.

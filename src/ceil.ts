@@ -1,7 +1,7 @@
 import createRound from './.internal/createRound.js';
 
 /**
- * Computes `number` rounded up to `precision`. (Round up: the smallest integer greater than or equal to a given number.)
+ * 根据 precision（精度） 向上舍入 number。（注： precision（精度）可以理解为保留几位小数。）
  *
  * @since 3.10.0
  * @category Math

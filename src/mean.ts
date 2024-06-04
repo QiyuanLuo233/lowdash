@@ -3,7 +3,7 @@ import baseMean from './meanBy.js';
 /**
  * Computes the mean of the values in `array`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Math
  * @param {Array} array The array to iterate over.
  * @returns {number} Returns the mean.

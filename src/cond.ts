@@ -6,7 +6,7 @@ import map from './map.js';
  * pairs are invoked with the `this` binding and arguments of the created
  * function.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Array} pairs The predicate-function pairs.
  * @returns {Function} Returns the new composite function.

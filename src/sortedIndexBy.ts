@@ -5,7 +5,7 @@ import baseSortedIndexBy from './.internal/baseSortedIndexBy.js';
  * which is invoked for `value` and each element of `array` to compute their
  * sort ranking. The iteratee is invoked with one argument: (value).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The sorted array to inspect.
  * @param {*} value The value to evaluate.

@@ -7,7 +7,7 @@ import getMatchData from './.internal/getMatchData.js';
  * are handled by the method instead. The `customizer` is invoked with five
  * arguments: (objValue, srcValue, index|key, object, source).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Lang
  * @param {Object} object The object to inspect.
  * @param {Object} source The object of property values to match.

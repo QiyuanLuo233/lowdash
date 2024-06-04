@@ -1,7 +1,7 @@
 /**
  * Checks if `string` starts with the given target string.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to inspect.
  * @param {string} [target] The string to search for.

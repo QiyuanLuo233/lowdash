@@ -5,7 +5,7 @@ import baseSortedIndex from './.internal/baseSortedIndex.js';
  * index at which `value` should be inserted into `array` in order to
  * maintain its sort order.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The sorted array to inspect.
  * @param {*} value The value to evaluate.

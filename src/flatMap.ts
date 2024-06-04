@@ -6,7 +6,7 @@ import map from './map.js';
  * thru `iteratee` and flattening the mapped results. The iteratee is invoked
  * with three arguments: (value, index|key, collection).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

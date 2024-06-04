@@ -7,7 +7,7 @@ import baseOrderBy from './.internal/baseOrderBy.js';
  * descending or "asc" for ascending sort order of corresponding values.
  * You may also specify a compare function for an order.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Array[]|Function[]|Object[]|string[]} [iteratees=[identity]]

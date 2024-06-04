@@ -12,7 +12,7 @@ const MAX_ARRAY_LENGTH = 4294967295;
  * **Note:** This method is based on
  * [`String#split`](https://mdn.io/String/split).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to split.
  * @param {RegExp|string} separator The separator pattern to split by.

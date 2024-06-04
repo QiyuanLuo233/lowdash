@@ -4,7 +4,7 @@ import some from './some.js';
  * Creates a function that checks if **any** of the `predicates` return
  * truthy when invoked with the arguments it receives.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Function[]} [predicates=[identity]]
  *  The predicates to check.

@@ -5,8 +5,7 @@ const CLONE_DEEP_FLAG = 1;
 const CLONE_SYMBOLS_FLAG = 4;
 
 /**
- * This method is like `clone` except that it recursively clones `value`.
- * Object inheritance is preserved.
+ * 这个方法类似_.clone，除了它会递归拷贝 value。（注：也叫深拷贝）。
  *
  * @since 1.0.0
  * @category Lang
@@ -21,7 +20,7 @@ const CLONE_SYMBOLS_FLAG = 4;
  * console.log(deep[0] === objects[0])
  * // => false
  */
-function cloneDeep(value) {
+function cloneDeep(value:any) {
     return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG);
 }
 

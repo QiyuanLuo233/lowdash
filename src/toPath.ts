@@ -7,7 +7,7 @@ import toKey from './.internal/toKey.js';
 /**
  * Converts `value` to a property path array.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Util
  * @param {*} value The value to convert.
  * @returns {Array} Returns the new property path array.

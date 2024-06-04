@@ -8,7 +8,7 @@ const MAX_ARRAY_LENGTH = 4294967295;
  * Invokes the iteratee `n` times, returning an array of the results of
  * each invocation. The iteratee is invoked with one argument: (index).
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Util
  * @param {number} n The number of times to invoke `iteratee`.
  * @param {Function} iteratee The function invoked per iteration.

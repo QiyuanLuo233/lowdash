@@ -1,7 +1,7 @@
 /**
  * Creates a function that invokes `func` with arguments reversed.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Function
  * @param {Function} func The function to flip arguments for.
  * @returns {Function} Returns the new flipped function.

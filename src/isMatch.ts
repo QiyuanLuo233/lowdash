@@ -12,7 +12,7 @@ import getMatchData from './.internal/getMatchData.js';
  * values against any array or object value, respectively. See `isEqual`
  * for a list of supported value comparisons.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Lang
  * @param {Object} object The object to inspect.
  * @param {Object} source The object of property values to match.

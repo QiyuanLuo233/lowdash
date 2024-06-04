@@ -3,7 +3,7 @@ import slice from './slice.js';
 /**
  * Gets all but the last element of `array`.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to query.
  * @returns {Array} Returns the slice of `array`.

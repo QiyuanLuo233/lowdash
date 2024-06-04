@@ -4,7 +4,7 @@ import baseGet from './.internal/baseGet.js';
  * The opposite of `property`s method creates a function that returns
  * the value at a given path of `object`.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Object} object The object to query.
  * @returns {Function} Returns the new accessor function.

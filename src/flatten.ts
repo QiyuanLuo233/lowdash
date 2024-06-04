@@ -3,7 +3,7 @@ import baseFlatten from './.internal/baseFlatten.js';
 /**
  * Flattens `array` a single level deep.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to flatten.
  * @returns {Array} Returns the new flattened array.

@@ -3,7 +3,7 @@ import basePick from './.internal/basePick.js';
 /**
  * Creates an object composed of the picked `object` properties.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The source object.
  * @param {...(string|string[])} [paths] The property paths to pick.

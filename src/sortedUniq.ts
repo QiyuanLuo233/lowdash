@@ -6,7 +6,7 @@ import baseSortedUniq from './.internal/baseSortedUniq.js';
  * If the input array is known to be sorted `sortedUniq` is
  * faster than `uniq`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to inspect.
  * @returns {Array} Returns the new duplicate free array.

@@ -12,7 +12,7 @@ const CLONE_DEEP_FLAG = 1;
  * **Note:** The created function is equivalent to `conformsTo` with
  * `source` partially applied.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Object} source The object of property predicates to conform to.
  * @returns {Function} Returns the new spec function.

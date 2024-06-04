@@ -10,7 +10,7 @@ import isIndex from './.internal/isIndex.js';
  *
  * **Note:** Unlike `at`, this method mutates `array`.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to modify.
  * @param {...(number|number[])} [indexes] The indexes of elements to remove.

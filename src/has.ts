@@ -4,7 +4,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
 /**
  * Checks if `key` is a direct property of `object`.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to query.
  * @param {string} key The key to check.

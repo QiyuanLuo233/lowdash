@@ -11,7 +11,7 @@ import isFlattenable from './isFlattenable.js'
  * @param {Array} [result=[]] The initial result value.
  * @returns {Array} Returns the new flattened array.
  */
-function baseFlatten(array, depth, predicate, isStrict, result) {
+function baseFlatten(array:any [], depth:number, predicate:any = isFlattenable, isStrict:boolean=false, result:any =[]) {
   predicate || (predicate = isFlattenable)
   result || (result = [])
 

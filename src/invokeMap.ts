@@ -8,7 +8,7 @@ import isArrayLike from './isArrayLike.js';
  * are provided to each invoked method. If `path` is a function, it's invoked
  * for, and `this` bound to, each element in `collection`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Array|Function|string} path The path of the method to invoke or

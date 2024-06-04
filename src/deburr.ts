@@ -33,7 +33,7 @@ const reComboMark = RegExp(rsCombo, 'g');
  * letters to basic Latin letters and removing
  * [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to deburr.
  * @returns {string} Returns the deburred string.

@@ -5,7 +5,7 @@ import isSymbol from './isSymbol.js';
  * invoked for each element in `array` to generate the criterion by which
  * the value is ranked. The iteratee is invoked with one argument: (value).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Math
  * @param {Array} array The array to iterate over.
  * @param {Function} iteratee The iteratee invoked per element.

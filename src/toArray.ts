@@ -18,7 +18,7 @@ const symIterator = Symbol.iterator;
 /**
  * Converts `value` to an array.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to convert.
  * @returns {Array} Returns the converted array.

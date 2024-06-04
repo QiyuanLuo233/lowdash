@@ -4,7 +4,7 @@
  * **Note:** This method is based on
  * [`String#replace`](https://mdn.io/String/replace).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to modify.
  * @param {RegExp|string} pattern The pattern to replace.

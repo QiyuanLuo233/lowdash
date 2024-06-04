@@ -1,21 +1,14 @@
 import baseClone from './.internal/baseClone.js';
 
 /** Used to compose bitmasks for cloning. */
-const CLONE_SYMBOLS_FLAG = 4;
+const CLONE_SYMBOLS_FLAG:number = 4;
 
 /**
- * Creates a shallow clone of `value`.
+ *创建一个 value 的浅拷贝。
  *
- * **Note:** This method is loosely based on the
- * [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
- * and supports cloning arrays, array buffers, booleans, date objects, maps,
- * numbers, `Object` objects, regexes, sets, strings, symbols, and typed
- * arrays. The own enumerable properties of `arguments` objects are cloned
- * as plain objects. Object inheritance is preserved. An empty object is
- * returned for uncloneable values such as error objects, functions, DOM nodes,
- * and WeakMaps.
+ * **注意:** 这个方法参考自structured clone algorithm 以及支持 arrays、array buffers、 booleans、 date objects、maps、 numbers， Object 对象, regexes, sets, strings, symbols, 以及 typed arrays。 arguments对象的可枚举属性会拷贝为普通对象。 一些不可拷贝的对象，例如error objects、functions, DOM nodes, 以及 WeakMaps 会返回空对象。
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to clone.
  * @returns {*} Returns the cloned value.
@@ -28,7 +21,7 @@ const CLONE_SYMBOLS_FLAG = 4;
  * console.log(shallow[0] === objects[0])
  * // => true
  */
-function clone(value) {
+function clone(value:any) {
     return baseClone(value, CLONE_SYMBOLS_FLAG);
 }
 

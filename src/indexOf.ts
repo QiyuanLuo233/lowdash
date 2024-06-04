@@ -7,7 +7,7 @@ import toInteger from './toInteger.js';
  * for equality comparisons. If `fromIndex` is negative, it's used as the
  * offset from the end of `array`.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to inspect.
  * @param {*} value The value to search for.

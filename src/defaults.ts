@@ -14,7 +14,7 @@ const hasOwnProperty = objectProto.hasOwnProperty;
  *
  * **Note:** This method mutates `object`.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The destination object.
  * @param {...Object} [sources] The source objects.

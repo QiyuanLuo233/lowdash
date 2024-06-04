@@ -7,7 +7,7 @@ import baseUniq from './.internal/baseUniq.js';
  * is kept. The order of result values is determined by the order they occur
  * in the array.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to inspect.
  * @returns {Array} Returns the new duplicate free array.

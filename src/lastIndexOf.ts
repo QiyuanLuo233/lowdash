@@ -7,7 +7,7 @@ import toInteger from './toInteger.js';
  * This method is like `indexOf` except that it iterates over elements of
  * `array` from right to left.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to inspect.
  * @param {*} value The value to search for.

@@ -6,7 +6,7 @@ import baseReduce from './.internal/baseReduce.js';
  * This method is like `reduce` except that it iterates over elements of
  * `collection` from right to left.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

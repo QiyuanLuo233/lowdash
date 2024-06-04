@@ -6,7 +6,7 @@ import reduce from './reduce.js';
  * contains elements `predicate` returns falsey for. The predicate is
  * invoked with one argument: (value).
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} predicate The function invoked per iteration.

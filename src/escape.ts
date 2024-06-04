@@ -28,7 +28,7 @@ const reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
  * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
  * XSS vectors.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to escape.
  * @returns {string} Returns the escaped string.

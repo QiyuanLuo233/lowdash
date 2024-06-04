@@ -3,7 +3,7 @@
  * with the `this` binding of the created function, where each successive
  * invocation is supplied the return value of the previous.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Function[]} [funcs] The functions to invoke.
  * @returns {Function} Returns the new composite function.

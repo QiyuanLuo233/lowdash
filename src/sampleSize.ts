@@ -5,7 +5,7 @@ import slice from './slice.js';
  * Gets `n` random elements at unique keys from `array` up to the
  * size of `array`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to sample.
  * @param {number} [n=1] The number of elements to sample.

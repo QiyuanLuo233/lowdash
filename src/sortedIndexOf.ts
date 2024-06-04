@@ -5,7 +5,7 @@ import eq from './eq.js';
  * This method is like `indexOf` except that it performs a binary
  * search on a sorted `array`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to inspect.
  * @param {*} value The value to search for.

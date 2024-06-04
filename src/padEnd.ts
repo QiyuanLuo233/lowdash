@@ -5,7 +5,7 @@ import stringSize from './.internal/stringSize.js';
  * Pads `string` on the right side if it's shorter than `length`. Padding
  * characters are truncated if they exceed `length`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to pad.
  * @param {number} [length=0] The padding length.

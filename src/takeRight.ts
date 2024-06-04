@@ -3,7 +3,7 @@ import slice from './slice.js';
 /**
  * Creates a slice of `array` with `n` elements taken from the end.
  *
- * @since 3.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to query.
  * @param {number} [n=1] The number of elements to take.

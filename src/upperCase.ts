@@ -4,7 +4,7 @@ import toString from './toString.js';
 /**
  * Converts `string`, as space separated words, to upper case.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to convert.
  * @returns {string} Returns the upper cased string.

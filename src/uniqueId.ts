@@ -4,7 +4,7 @@ const idCounter = {};
 /**
  * Generates a unique ID. If `prefix` is given, the ID is appended to it.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Util
  * @param {string} [prefix=''] The value to prefix the ID with.
  * @returns {string} Returns the unique ID.

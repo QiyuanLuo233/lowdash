@@ -4,7 +4,7 @@ import every from './every.js';
  * Creates a function that checks if **all** of the `predicates` return
  * truthy when invoked with the arguments it receives.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Function[]} [predicates=[identity]]
  *  The predicates to check.

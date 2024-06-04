@@ -7,7 +7,7 @@ const methodName = ''.trimLeft ? 'trimLeft' : 'trimStart';
 /**
  * Removes leading whitespace or specified characters from `string`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to trim.
  * @param {string} [chars=whitespace] The characters to trim.

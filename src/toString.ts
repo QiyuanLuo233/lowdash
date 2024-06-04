@@ -7,7 +7,7 @@ const INFINITY = 1 / 0;
  * Converts `value` to a string. An empty string is returned for `null`
  * and `undefined` values. The sign of `-0` is preserved.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to convert.
  * @returns {string} Returns the converted string.

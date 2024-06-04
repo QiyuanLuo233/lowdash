@@ -6,7 +6,7 @@ import toKey from './.internal/toKey.js';
  * function it's invoked with the `this` binding of its parent object and
  * its result is returned.
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to query.
  * @param {Array|string} path The path of the property to resolve.

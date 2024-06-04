@@ -4,7 +4,7 @@ import map from './map.js';
  * Creates a function that invokes `iteratees` with the arguments it receives
  * and returns their results.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Util
  * @param {Function[]} [iteratees=[identity]]
  *  The iteratees to invoke.

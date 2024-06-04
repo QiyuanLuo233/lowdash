@@ -19,7 +19,7 @@ const reFlags = /\w*$/;
  * The last characters of the truncated string are replaced with the omission
  * string which defaults to "...".
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to truncate.
  * @param {Object} [options={}] The options object.

@@ -8,7 +8,7 @@ import last from './last.js';
  * determined by the order they occur in the arrays. The comparator is invoked
  * with two arguments: (arrVal, othVal).
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Array
  * @param {...Array} [arrays] The arrays to inspect.
  * @param {Function} [comparator] The comparator invoked per element.

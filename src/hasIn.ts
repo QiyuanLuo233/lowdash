@@ -1,7 +1,7 @@
 /**
  * Checks if `path` is a direct or inherited property of `object`.
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to query.
  * @param {string} key The key to check.

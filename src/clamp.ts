@@ -1,7 +1,7 @@
 /**
- * Clamps `number` within the inclusive `lower` and `upper` bounds.
+ * 返回限制在 lower 和 upper 之间的值。
  *
- * @since 4.0.0
+ * @since 1.0.0
  * @category Number
  * @param {number} number The number to clamp.
  * @param {number} lower The lower bound.
@@ -15,7 +15,7 @@
  * clamp(10, -5, 5)
  * // => 5
  */
-function clamp(number: number, lower: number, upper: number) {
+function clamp(number: number, lower: number, upper: number):number {
     number = +number;
     lower = +lower;
     upper = +upper;
