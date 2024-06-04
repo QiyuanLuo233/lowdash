@@ -5,7 +5,7 @@ import baseZipObject from './.internal/baseZipObject.js';
  * This method is like `fromPairs` except that it accepts two arrays,
  * one of property identifiers and one of corresponding values.
  *
- * @since 0.4.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} [props=[]] The property identifiers.
  * @param {Array} [values=[]] The property values.

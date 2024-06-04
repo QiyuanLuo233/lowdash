@@ -4,12 +4,11 @@ import isArrayLikeObject from './isArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `difference` except that it accepts `comparator`
- * which is invoked to compare elements of `array` to `values`. The order and
- * references of result values are determined by the first array. The comparator
- * is invoked with two arguments: (arrVal, othVal).
+ * 这个方法类似_.difference ，除了它接受一个 comparator （注：比较器），
+ * 它调用比较array，values中的元素。 结果值是从第一数组中选择。
+ * comparator 调用参数有两个：(arrVal, othVal)。
  *
- * **Note:** Unlike `pullAllWith`, this method returns a new array.
+ * **Note:** 不像_.pullAllWith，这个方法会返回一个新数组。
  *
  * @since 1.0.0
  * @category Array
@@ -24,7 +23,7 @@ import last from './last.js';
  * differenceWith(objects, [{ 'x': 1, 'y': 2 }], isEqual)
  * // => [{ 'x': 2, 'y': 1 }]
  */
-function differenceWith(array, ...values) {
+function differenceWith(array:any [], ...values) {
     let comparator = last(values);
     if (isArrayLikeObject(comparator)) {
         comparator = undefined;

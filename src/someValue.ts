@@ -3,7 +3,7 @@
  * Iteration is stopped once `predicate` returns truthy. The predicate is
  * invoked with three arguments: (value, key, object).
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} predicate The function invoked per iteration.

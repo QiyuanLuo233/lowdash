@@ -4,10 +4,7 @@ import baseClone from './.internal/baseClone.js';
 const CLONE_SYMBOLS_FLAG = 4;
 
 /**
- * This method is like `clone` except that it accepts `customizer` which
- * is invoked to produce the cloned value. If `customizer` returns `undefined`,
- * cloning is handled by the method instead. The `customizer` is invoked with
- * one argument (value).
+ * 这个方法类似_.clone，除了它接受一个 customizer 定制返回的克隆值。 如果 customizer 返回 undefined 将会使用拷贝方法代替处理。 customizer 调用4个参数： (value [, index|key, object, stack])。
  *
  * @since 1.0.0
  * @category Lang
@@ -32,7 +29,7 @@ const CLONE_SYMBOLS_FLAG = 4;
  * console.log(el.childNodes.length)
  * // => 0
  */
-function cloneWith(value, customizer) {
+function cloneWith(value:any, customizer:any) {
     customizer = typeof customizer === 'function' ? customizer : undefined;
     return baseClone(value, CLONE_SYMBOLS_FLAG, customizer);
 }

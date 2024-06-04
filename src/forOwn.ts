@@ -4,7 +4,7 @@
  * arguments: (value, key, object). Iteratee functions may exit iteration
  * early by explicitly returning `false`.
  *
- * @since 0.3.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

@@ -1,7 +1,5 @@
 /**
- * Performs a
- * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * comparison between two values to determine if they are equivalent.
+ * 执行SameValueZero 比较两者的值，来确定它们是否相等。
  *
  * @since 1.0.0
  * @category Lang
@@ -28,7 +26,7 @@
  * eq(NaN, NaN)
  * // => true
  */
-function eq(value, other) {
+function eq(value, other):boolean {
     return value === other || (value !== value && other !== other);
 }
 

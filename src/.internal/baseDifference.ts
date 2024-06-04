@@ -18,10 +18,10 @@ const LARGE_ARRAY_SIZE = 200
  * @param {Function} [comparator] The comparator invoked per element.
  * @returns {Array} Returns the new array of filtered values.
  */
-function baseDifference(array, values, iteratee, comparator) {
-  let includes = arrayIncludes
+function baseDifference(array:any [], values:any, iteratee:any=undefined, comparator:any = undefined) {
+  let includes:any = arrayIncludes
   let isCommon = true
-  const result = []
+  const result:any [] = []
   const valuesLength = values.length
 
   if (!array.length) {

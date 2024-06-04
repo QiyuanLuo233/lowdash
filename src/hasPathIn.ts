@@ -7,7 +7,7 @@ import toKey from './.internal/toKey.js';
 /**
  * Checks if `path` is a direct property of `object`.
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to query.
  * @param {Array|string} path The path to check.

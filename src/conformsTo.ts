@@ -2,11 +2,9 @@ import baseConformsTo from './.internal/baseConformsTo.js';
 import keys from './keys.js';
 
 /**
- * Checks if `object` conforms to `source` by invoking the predicate
- * properties of `source` with the corresponding property values of `object`.
+ * 通过调用断言source的属性与 object 的相应属性值，检查 object是否符合 source。当source偏应用时，这种方法和_.conforms函数是等价的。
  *
- * **Note:** This method is equivalent to `conforms` when `source` is
- * partially applied.
+ * **Note:** 当source为偏应用时，这种方法等价于_.conforms。（注：关于偏应用大家可以自己到google上搜索一下）。
  *
  * @since 4.14.0
  * @category Lang
@@ -23,7 +21,7 @@ import keys from './keys.js';
  * conformsTo(object, { 'b': function(n) { return n > 2 } })
  * // => false
  */
-function conformsTo(object, source) {
+function conformsTo(object:any, source:any =null) {
     return source == null || baseConformsTo(object, source, keys(source));
 }
 

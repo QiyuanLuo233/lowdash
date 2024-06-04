@@ -4,11 +4,10 @@ import baseIsEqual from './.internal/baseIsEqual.js';
  * Performs a deep comparison between two values to determine if they are
  * equivalent.
  *
- * **Note:** This method supports comparing arrays, array buffers, booleans,
- * date objects, error objects, maps, numbers, `Object` objects, regexes,
- * sets, strings, symbols, and typed arrays. `Object` objects are compared
- * by their own, not inherited, enumerable properties. Functions and DOM
- * nodes are compared by strict equality, i.e. `===`.
+ * **Note:** 这个方法支持比较 arrays, array buffers, booleans, date objects, 
+ * error objects, maps, numbers, Object objects, regexes, sets, strings, symbols, 
+ * 以及 typed arrays. Object 对象值比较自身的属性，不包括继承的和可枚举的属性。
+ *  不支持函数和DOM节点比较。
  *
  * @since 1.0.0
  * @category Lang
@@ -26,7 +25,7 @@ import baseIsEqual from './.internal/baseIsEqual.js';
  * object === other
  * // => false
  */
-function isEqual(value, other) {
+function isEqual(value:any, other:any) {
     return baseIsEqual(value, other);
 }
 

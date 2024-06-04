@@ -1,9 +1,8 @@
 /**
- * Creates an object that inherits from the `prototype` object. If a
- * `properties` object is given, its own enumerable string keyed properties
- * are assigned to the created object.
+ * 创建一个继承 prototype 的对象。
+ *  如果提供了 prototype，它的可枚举属性会被分配到创建的对象上。
  *
- * @since 2.3.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} prototype The object to inherit from.
  * @param {Object} [properties] The properties to assign to the object.
@@ -30,7 +29,7 @@
  * circle instanceof Shape
  * // => true
  */
-function create(prototype, properties) {
+function create(prototype:any, properties:any=null) {
     prototype = prototype === null ? null : Object(prototype);
     const result = Object.create(prototype);
     return properties == null ? result : Object.assign(result, properties);

@@ -1,9 +1,9 @@
 import createMathOperation from './.internal/createMathOperation.js';
 
 /**
- * Divide two numbers.
+ * 两个数相除。
  *
- * @since 4.7.0
+ * @since 1.0.0
  * @category Math
  * @param {number} dividend The first number in a division.
  * @param {number} divisor The second number in a division.
@@ -13,6 +13,6 @@ import createMathOperation from './.internal/createMathOperation.js';
  * divide(6, 4)
  * // => 1.5
  */
-const divide = createMathOperation((dividend, divisor) => dividend / divisor, 1);
+const divide = createMathOperation((dividend:number, divisor:number) => dividend / divisor, 1);
 
 export default divide;

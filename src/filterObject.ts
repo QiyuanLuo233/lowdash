@@ -5,7 +5,7 @@
  *
  * If you want an object in return, consider `pickBy`.
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} predicate The function invoked per iteration.
@@ -20,7 +20,7 @@
  */
 function filterObject(object, predicate) {
     object = Object(object);
-    const result = [];
+    const result:any = [];
 
     Object.keys(object).forEach((key) => {
         const value = object[key];

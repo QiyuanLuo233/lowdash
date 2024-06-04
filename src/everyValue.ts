@@ -8,7 +8,7 @@
  * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
  * elements of empty objects.
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} predicate The function invoked per iteration.

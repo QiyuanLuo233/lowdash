@@ -5,12 +5,11 @@ import reduce from './reduce.js';
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
- * Creates an object composed of keys generated from the results of running
- * each element of `collection` thru `iteratee`. The corresponding value of
- * each key is the number of times the key was returned by `iteratee`. The
- * iteratee is invoked with one argument: (value).
+ * 创建一个组成对象，key（键）是经过 iteratee（迭代函数） 执行处理collection中每个元素后返回的结果，
+ * 每个key（键）对应的值是 iteratee（迭代函数）返回该key（键）的次数（注：迭代次数）。 
+ * iteratee 调用一个参数：(value)。.
  *
- * @since 0.5.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} iteratee The iteratee to transform keys.
@@ -26,7 +25,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
  * countBy(users, value => value.active);
  * // => { 'true': 2, 'false': 1 }
  */
-function countBy(collection, iteratee) {
+function countBy(collection:any, iteratee:any) {
     return reduce(
         collection,
         (result, value, key) => {

@@ -5,7 +5,7 @@ import isArrayLike from './isArrayLike.js';
  * This method is like `find` except that it iterates over elements of
  * `collection` from right to left.
  *
- * @since 2.0.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to inspect.
  * @param {Function} predicate The function invoked per iteration.

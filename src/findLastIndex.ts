@@ -5,7 +5,7 @@ import toInteger from './toInteger.js';
  * This method is like `findIndex` except that it iterates over elements
  * of `collection` from right to left.
  *
- * @since 2.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to inspect.
  * @param {Function} predicate The function invoked per iteration.

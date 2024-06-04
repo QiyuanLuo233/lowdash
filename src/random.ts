@@ -12,7 +12,7 @@ const freeParseFloat = parseFloat;
  * **Note:** JavaScript follows the IEEE-754 standard for resolving
  * floating-point values which can produce unexpected results.
  *
- * @since 0.7.0
+ * @since 1.0.0
  * @category Number
  * @param {number} [lower=0] The lower bound.
  * @param {number} [upper=1] The upper bound.

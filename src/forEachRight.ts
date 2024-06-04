@@ -5,7 +5,7 @@ import baseEachRight from './.internal/baseEachRight.js';
  * This method is like `forEach` except that it iterates over elements of
  * `collection` from right to left.
  *
- * @since 2.0.0
+ * @since 1.0.0
  * @alias eachRight
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.

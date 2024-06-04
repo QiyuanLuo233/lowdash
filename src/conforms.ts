@@ -5,12 +5,9 @@ import baseConforms from './.internal/baseConforms.js';
 const CLONE_DEEP_FLAG = 1;
 
 /**
- * Creates a function that invokes the predicate properties of `source` with
- * the corresponding property values of a given object, returning `true` if
- * all predicates return truthy, else `false`.
+ * 创建一个函数。 这个函数会 调用 source 的属性名对应的 predicate 与传入对象相对应属性名的值进行断言处理。 如果都符合返回 true ，否则返回 false 。
  *
- * **Note:** The created function is equivalent to `conformsTo` with
- * `source` partially applied.
+ * **Note:** 当source为偏应用时，这种方法等价于_.conformsTo。（注：关于偏应用大家可以自己到google上搜索一下）。
  *
  * @since 1.0.0
  * @category Util
@@ -26,7 +23,7 @@ const CLONE_DEEP_FLAG = 1;
  * filter(objects, conforms({ 'b': function(n) { return n > 1 } }))
  * // => [{ 'a': 1, 'b': 2 }]
  */
-function conforms(source) {
+function conforms(source:any) {
     return baseConforms(baseClone(source, CLONE_DEEP_FLAG));
 }
 

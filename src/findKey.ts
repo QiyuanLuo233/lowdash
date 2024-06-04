@@ -1,8 +1,7 @@
 /**
- * This method is like `find` except that it returns the key of the first
- * element `predicate` returns truthy for instead of the element itself.
+ * 这个方法类似_.find 。 除了它返回最先被 predicate 判断为真值的元素 key，而不是元素本身。
  *
- * @since 1.1.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to inspect.
  * @param {Function} predicate The function invoked per iteration.

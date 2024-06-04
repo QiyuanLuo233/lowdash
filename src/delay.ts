@@ -1,6 +1,5 @@
 /**
- * Invokes `func` after `wait` milliseconds. Any additional arguments are
- * provided to `func` when it's invoked.
+ * 延迟 wait 毫秒后调用 func。 调用时，任何附加的参数会传给func。
  *
  * @since 1.0.0
  * @category Function
@@ -13,7 +12,7 @@
  * delay(text => console.log(text), 1000, 'later')
  * // => Logs 'later' after one second.
  */
-function delay(func: Function, wait: number, ...args: any[]) {
+function delay(func: any, wait: number, ...args: any[]) {
     if (typeof func !== 'function') {
         throw new TypeError('Expected a function');
     }

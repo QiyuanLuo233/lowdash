@@ -8,7 +8,7 @@ import basePullAt from './.internal/basePullAt.js';
  * **Note:** Unlike `filter`, this method mutates `array`. Use `pull`
  * to pull elements from an array by value.
  *
- * @since 2.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to modify.
  * @param {Function} predicate The function invoked per iteration.

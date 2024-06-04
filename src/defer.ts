@@ -1,6 +1,5 @@
 /**
- * Defers invoking the `func` until the current call stack has cleared. Any
- * additional arguments are provided to `func` when it's invoked.
+ * 推迟调用func，直到当前堆栈清理完毕。 调用时，任何附加的参数会传给func。
  *
  * @since 1.0.0
  * @category Function
@@ -12,7 +11,7 @@
  * defer(text => console.log(text), 'deferred')
  * // => Logs 'deferred' after one millisecond.
  */
-function defer(func: Function, ...args: any[]) {
+function defer(func: any, ...args: any[]) {
     if (typeof func !== 'function') {
         throw new TypeError('Expected a function');
     }

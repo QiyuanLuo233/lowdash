@@ -2,7 +2,7 @@
  * This method is like `forOwn` except that it iterates over properties of
  * `object` in the opposite order.
  *
- * @since 2.0.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

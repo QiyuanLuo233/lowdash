@@ -1,10 +1,7 @@
 import map from './map.js';
 
 /**
- * Creates a function that iterates over `pairs` and invokes the corresponding
- * function of the first predicate to return truthy. The predicate-function
- * pairs are invoked with the `this` binding and arguments of the created
- * function.
+ * 创建了一个函数，这个函数会迭代pairs，并调用最先返回真值对应的函数。该断言函数对绑定 this 及传入创建函数的参数。
  *
  * @since 1.0.0
  * @category Util
@@ -28,7 +25,7 @@ import map from './map.js';
  * // => 'no match'
  */
 function cond(pairs: any[]) {
-    const length = pairs == null ? 0 : pairs.length;
+    const length:number = pairs == null ? 0 : pairs.length;
 
     pairs = !length
         ? []

@@ -7,12 +7,10 @@ const objectProto = Object.prototype;
 const hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Assigns own and inherited enumerable string keyed properties of source
- * objects to the destination object for all destination properties that
- * resolve to `undefined`. Source objects are applied from left to right.
- * Once a property is set, additional values of the same property are ignored.
+ * 分配来源对象的可枚举属性到目标对象所有解析为 undefined 的属性上。 
+ * 来源对象从左到右应用。 一旦设置了相同属性的值，后续的将被忽略掉。
  *
- * **Note:** This method mutates `object`.
+ * **Note:** 这方法会改变 object.
  *
  * @since 1.0.0
  * @category Object
@@ -25,7 +23,7 @@ const hasOwnProperty = objectProto.hasOwnProperty;
  * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 })
  * // => { 'a': 1, 'b': 2 }
  */
-function defaults(object, ...sources) {
+function defaults(object:any, ...sources:any) {
     object = Object(object);
     sources.forEach((source) => {
         if (source != null) {

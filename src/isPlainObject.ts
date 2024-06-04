@@ -5,7 +5,7 @@ import isObjectLike from './isObjectLike.js';
  * Checks if `value` is a plain object, that is, an object created by the
  * `Object` constructor or one with a `[[Prototype]]` of `null`.
  *
- * @since 0.8.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.

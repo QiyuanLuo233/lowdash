@@ -1,7 +1,7 @@
 /**
  * Gets a random element from `array`.
  *
- * @since 2.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to sample.
  * @returns {*} Returns the random element.

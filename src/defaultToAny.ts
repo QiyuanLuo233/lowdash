@@ -2,10 +2,9 @@ import arrayReduce from './.internal/arrayReduce.js';
 import defaultTo from './defaultTo.js';
 
 /**
- * This method is like `defaultTo` except that it accepts multiple default values and returns the first one that is not
- * `NaN`, `null`, or `undefined`.
+ * 检查value，以确定一个默认值是否应被返回。如果value为NaN, null, 或者 undefined，那么返回后续第一个不为NaN，null，undefined的值
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Util
  * @param {*} value The value to check.
  * @param {...*} defaultValues The default values.

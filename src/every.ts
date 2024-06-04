@@ -8,7 +8,7 @@
  * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
  * elements of empty arrays.
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to iterate over.
  * @param {Function} predicate The function invoked per iteration.
@@ -19,7 +19,7 @@
  * every([true, 1, null, 'yes'], Boolean)
  * // => false
  */
-function every(array, predicate) {
+function every(array:any [], predicate:any) {
     let index = -1;
     const length = array == null ? 0 : array.length;
 

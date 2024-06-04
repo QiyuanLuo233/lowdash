@@ -5,9 +5,7 @@ const CLONE_DEEP_FLAG = 1;
 const CLONE_SYMBOLS_FLAG = 4;
 
 /**
- * This method is like `cloneWith` except that it recursively clones `value`.
- * The customizer is invoked with up to four arguments
- * (value [, index|key, object, stack]).
+ * 这个方法类似_.cloneWith，除了它会递归克隆 value。
  *
  * @since 1.0.0
  * @category Lang
@@ -32,7 +30,7 @@ const CLONE_SYMBOLS_FLAG = 4;
  * console.log(el.childNodes.length)
  * // => 20
  */
-function cloneDeepWith(value, customizer) {
+function cloneDeepWith(value:any, customizer:any) {
     customizer = typeof customizer === 'function' ? customizer : undefined;
     return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG, customizer);
 }

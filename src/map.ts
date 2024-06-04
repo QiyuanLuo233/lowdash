@@ -2,7 +2,7 @@
  * Creates an array of values by running each element of `array` thru `iteratee`.
  * The iteratee is invoked with three arguments: (value, index, array).
  *
- * @since 5.0.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

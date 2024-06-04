@@ -2,7 +2,7 @@ import slice from './slice.js';
 import toInteger from './toInteger.js';
 
 /**
- * Creates a slice of `array` with `n` elements dropped from the end.
+ * 创建一个切片数组，去除array尾部的n个元素。（n默认值为1。）
  *
  * @since 1.0.0
  * @category Array
@@ -23,7 +23,7 @@ import toInteger from './toInteger.js';
  * dropRight([1, 2, 3], 0)
  * // => [1, 2, 3]
  */
-function dropRight(array, n = 1) {
+function dropRight(array:any [], n:number = 1) {
     const length = array == null ? 0 : array.length;
     n = length - toInteger(n);
     return length ? slice(array, 0, n < 0 ? 0 : n) : [];

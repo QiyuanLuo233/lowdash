@@ -27,7 +27,7 @@ const rsCombo = `[${rsComboRange}]`;
 const reComboMark = RegExp(rsCombo, 'g');
 
 /**
- * Deburrs `string` by converting
+ * 转换字符串string中拉丁语-1补充字母 和拉丁语扩展字母-A 为基本的拉丁字母，并且去除组合变音标记。
  * [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)#Character_table)
  * and [Latin Extended-A](https://en.wikipedia.org/wiki/Latin_Extended-A)
  * letters to basic Latin letters and removing
@@ -42,7 +42,7 @@ const reComboMark = RegExp(rsCombo, 'g');
  * deburr('déjà vu')
  * // => 'deja vu'
  */
-function deburr(string) {
+function deburr(string:string) {
     return string && string.replace(reLatin, deburrLetter).replace(reComboMark, '');
 }
 

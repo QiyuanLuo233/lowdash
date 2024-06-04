@@ -4,13 +4,12 @@ import isArrayLikeObject from './isArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `difference` except that it accepts `iteratee` which
- * is invoked for each element of `array` and `values` to generate the criterion
- * by which they're compared. The order and references of result values are
- * determined by the first array. The iteratee is invoked with one argument:
- * (value).
+ * 这个方法类似_.difference ，除了它接受一个 iteratee （注：迭代器）， 
+ * 调用array 和 values 中的每个元素以产生比较的标准。 结果值是从第一数组中选择。
+ * iteratee 会调用一个参数：(value)。
+ * （注：首先使用迭代器分别迭代array 和 values中的每个元素，返回的值作为比较值）
  *
- * **Note:** Unlike `pullAllBy`, this method returns a new array.
+ * **Note:** 不像_.pullAllBy，这个方法会返回一个新数组。
  *
  * @since 1.0.0
  * @category Array
@@ -23,7 +22,7 @@ import last from './last.js';
  * differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor)
  * // => [1.2]
  */
-function differenceBy(array, ...values) {
+function differenceBy(array:any [], ...values:any) {
     let iteratee = last(values);
     if (isArrayLikeObject(iteratee)) {
         iteratee = undefined;

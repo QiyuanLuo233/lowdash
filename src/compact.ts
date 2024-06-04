@@ -1,6 +1,5 @@
 /**
- * Creates an array with all falsey values removed. The values `false`, `null`,
- * `0`, `""`, `undefined`, and `NaN` are falsey.
+ * 创建一个新数组，包含原数组中所有的非假值元素。例如false, null,0, "", undefined, 和 NaN 都是被认为是“假值”.
  *
  * @since 1.0.0
  * @category Array
@@ -11,9 +10,9 @@
  * compact([0, 1, false, 2, '', 3])
  * // => [1, 2, 3]
  */
-function compact(array) {
+function compact(array:any):any [] {
     let resIndex = 0;
-    const result = [];
+    const result:any [] = [];
 
     if (array == null) {
         return result;

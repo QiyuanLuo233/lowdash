@@ -6,8 +6,7 @@ const reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
 const reHasRegExpChar = RegExp(reRegExpChar.source);
 
 /**
- * Escapes the `RegExp` special characters "^", "$", "\", ".", "*", "+",
- * "?", "(", ")", "[", "]", "{", "}", and "|" in `string`.
+ * 转义 RegExp 字符串中特殊的字符 "^", "$", "", ".", "*", "+", "?", "(", ")", "[", "]", ", ", 和 "|" in .
  *
  * @since 1.0.0
  * @category String
@@ -19,7 +18,7 @@ const reHasRegExpChar = RegExp(reRegExpChar.source);
  * escapeRegExp('[lodash](https://lodash.com/)')
  * // => '\[lodash\]\(https://lodash\.com/\)'
  */
-function escapeRegExp(string) {
+function escapeRegExp(string:any) {
     return string && reHasRegExpChar.test(string)
         ? string.replace(reRegExpChar, '\\$&')
         : string || '';

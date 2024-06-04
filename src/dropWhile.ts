@@ -1,9 +1,8 @@
 import baseWhile from './.internal/baseWhile.js';
 
 /**
- * Creates a slice of `array` excluding elements dropped from the beginning.
- * Elements are dropped until `predicate` returns falsey. The predicate is
- * invoked with three arguments: (value, index, array).
+ * 创建一个切片数组，去除array中从起点开始到 predicate
+ *  返回假值结束部分。predicate 会传入3个参数： (value, index, array)。
  *
  * @since 1.0.0
  * @category Array
@@ -21,7 +20,7 @@ import baseWhile from './.internal/baseWhile.js';
  * dropWhile(users, ({ active }) => active)
  * // => objects for ['pebbles']
  */
-function dropWhile(array, predicate) {
+function dropWhile(array:any [], predicate:any) {
     return array != null && array.length ? baseWhile(array, predicate, true) : [];
 }
 
