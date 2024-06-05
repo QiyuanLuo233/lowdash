@@ -4,8 +4,7 @@ import toString from './toString.js';
 const reQuotes = /['\u2019]/g;
 
 /**
- * Converts `string`, as space separated words, to lower case.
- *
+ * 转换字符串string以空格分开单词，并转换为小写。
  * @since 1.0.0
  * @category String
  * @param {string} [string=''] The string to convert.
@@ -22,7 +21,7 @@ const reQuotes = /['\u2019]/g;
  * lowerCase('__FOO_BAR__')
  * // => 'foo bar'
  */
-const lowerCase = (string) =>
+const lowerCase = (string:string) =>
     words(toString(string).replace(reQuotes, '')).reduce(
         (result, word, index) => result + (index ? ' ' : '') + word.toLowerCase(),
         '',

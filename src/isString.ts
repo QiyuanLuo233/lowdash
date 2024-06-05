@@ -1,7 +1,7 @@
 import getTag from './.internal/getTag.js';
 
 /**
- * Checks if `value` is classified as a `String` primitive or object.
+ * 检查 value 是否是原始字符串String或者对象。
  *
  * @since 1.0.0
  * @category Lang
@@ -15,7 +15,7 @@ import getTag from './.internal/getTag.js';
  * isString(1)
  * // => false
  */
-function isString(value) {
+function isString(value):boolean {
     const type = typeof value;
     return (
         type === 'string' ||

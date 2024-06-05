@@ -2,7 +2,7 @@ import getTag from './.internal/getTag.js';
 import isObjectLike from './isObjectLike.js';
 
 /**
- * Checks if `value` is classified as a boolean primitive or object.
+ * 检查 value 是否是原始 boolean 类型或者对象。
  *
  * @since 1.0.0
  * @category Lang
@@ -16,7 +16,7 @@ import isObjectLike from './isObjectLike.js';
  * isBoolean(null)
  * // => false
  */
-function isBoolean(value) {
+function isBoolean(value):boolean {
     return (
         value === true ||
         value === false ||

@@ -4,8 +4,7 @@ import strictLastIndexOf from './.internal/strictLastIndexOf.js';
 import toInteger from './toInteger.js';
 
 /**
- * This method is like `indexOf` except that it iterates over elements of
- * `array` from right to left.
+ * 这个方法类似_.indexOf ，区别是它是从右到左遍历array的元素。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +21,7 @@ import toInteger from './toInteger.js';
  * lastIndexOf([1, 2, 1, 2], 2, 2)
  * // => 1
  */
-function lastIndexOf(array, value, fromIndex) {
+function lastIndexOf(array, value, fromIndex:number):number {
     const length = array == null ? 0 : array.length;
     if (!length) {
         return -1;

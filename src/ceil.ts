@@ -3,7 +3,7 @@ import createRound from './.internal/createRound.js';
 /**
  * 根据 precision（精度） 向上舍入 number。（注： precision（精度）可以理解为保留几位小数。）
  *
- * @since 3.10.0
+ * @since 1.0.0
  * @category Math
  * @param {number} number The number to round up.
  * @param {number} [precision=0] The precision to round up to.

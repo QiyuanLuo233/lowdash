@@ -1,7 +1,7 @@
 /**
- * Checks if `value` is less than or equal to `other`.
+ * 判断小于等于
  *
- * @since 3.9.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to compare.
  * @param {*} other The other value to compare.
@@ -19,7 +19,7 @@
  * lte(3, 1)
  * // => false
  */
-function lte(value, other) {
+function lte(value, other):boolean {
     if (!(typeof value === 'string' && typeof other === 'string')) {
         value = +value;
         other = +other;

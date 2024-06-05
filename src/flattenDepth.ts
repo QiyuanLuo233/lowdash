@@ -1,9 +1,9 @@
 import baseFlatten from './.internal/baseFlatten.js';
 
 /**
- * Recursively flatten `array` up to `depth` times.
+ * 根据 depth 递归减少 array 的嵌套层级。
  *
- * @since 4.4.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to flatten.
  * @param {number} [depth=1] The maximum recursion depth.
@@ -19,7 +19,7 @@ import baseFlatten from './.internal/baseFlatten.js';
  * flattenDepth(array, 2)
  * // => [1, 2, 3, [4], 5]
  */
-function flattenDepth(array, depth) {
+function flattenDepth(array:any [], depth:number = 1):any [] {
     const length = array == null ? 0 : array.length;
     if (!length) {
         return [];

@@ -1,7 +1,6 @@
 /**
- * Composes a function that returns the result of invoking the given functions
- * with the `this` binding of the created function, where each successive
- * invocation is supplied the return value of the previous.
+ * 创建一个函数。 返回的结果是调用提供函数的结果，
+ * this 会绑定到创建函数。 每一个连续调用，传入的参数都是前一个函数返回的结果。
  *
  * @since 1.0.0
  * @category Util
@@ -20,7 +19,7 @@
  * addSquare(1, 2)
  * // => 9
  */
-function flow(...funcs: Function[]) {
+function flow(...funcs) {
     const length = funcs.length;
     let i = length;
     while (i--) {

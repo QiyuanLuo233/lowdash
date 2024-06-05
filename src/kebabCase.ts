@@ -2,7 +2,7 @@ import words from './words.js';
 import toString from './toString.js';
 
 /**
- * Converts `string` to
+ *转换字符串string为 
  * [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
  *
  * @since 1.0.0
@@ -21,7 +21,7 @@ import toString from './toString.js';
  * kebabCase('__FOO_BAR__')
  * // => 'foo-bar'
  */
-const kebabCase = (string) =>
+const kebabCase = (string:string):string =>
     words(toString(string).replace(/['\u2019]/g, '')).reduce(
         (result, word, index) => result + (index ? '-' : '') + word.toLowerCase(),
         '',

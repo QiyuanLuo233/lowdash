@@ -2,8 +2,7 @@ import isArrayLike from './isArrayLike.js';
 import isObjectLike from './isObjectLike.js';
 
 /**
- * This method is like `isArrayLike` except that it also checks if `value`
- * is an object.
+ * 这个方法类似_.isArrayLike。除了它还检查value是否是个对象。
  *
  * @since 1.0.0
  * @category Lang
@@ -24,7 +23,7 @@ import isObjectLike from './isObjectLike.js';
  * isArrayLikeObject(Function)
  * // => false
  */
-function isArrayLikeObject(value) {
+function isArrayLikeObject(value):boolean {
     return isObjectLike(value) && isArrayLike(value);
 }
 

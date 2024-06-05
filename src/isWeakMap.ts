@@ -2,9 +2,9 @@ import getTag from './.internal/getTag.js';
 import isObjectLike from './isObjectLike.js';
 
 /**
- * Checks if `value` is classified as a `WeakMap` object.
+ * 检查 value 是否是 WeakMap 对象。
  *
- * @since 4.3.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a weak map, else `false`.
@@ -16,7 +16,7 @@ import isObjectLike from './isObjectLike.js';
  * isWeakMap(new Map)
  * // => false
  */
-function isWeakMap(value) {
+function isWeakMap(value):boolean {
     return isObjectLike(value) && getTag(value) === '[object WeakMap]';
 }
 

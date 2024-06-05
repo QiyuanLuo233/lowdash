@@ -1,7 +1,7 @@
 /**
- * Creates an array of the own and inherited enumerable property names of `object`.
+ * 创建一个 object 自身 和 继承的可枚举属性名为数组。
  *
- *
+ *NOTE** 非对象的值会被强制转换为对象。
  * @static
  * @memberOf _
  * @since 1.0.0
@@ -21,7 +21,7 @@
  * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
  */
 function keysIn(object) {
-    const result = [];
+    const result:any [] = [];
     for (const key in object) {
         result.push(key);
     }

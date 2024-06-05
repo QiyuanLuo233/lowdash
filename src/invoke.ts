@@ -4,7 +4,7 @@ import parent from './.internal/parent.js';
 import toKey from './.internal/toKey.js';
 
 /**
- * Invokes the method at `path` of `object`.
+ * 调用object对象path上的方法。
  *
  * @since 1.0.0
  * @category Object
@@ -17,9 +17,9 @@ import toKey from './.internal/toKey.js';
  * const object = { 'a': [{ 'b': { 'c': [1, 2, 3, 4] } }] }
  *
  * invoke(object, 'a[0].b.c.slice', [1, 3])
- * // => [2, 3]
+ * // => [2, 3] slice掉了下标为1、3的值
  */
-function invoke(object, path, args) {
+function invoke(object:any, path, args):any {
     path = castPath(path, object);
     object = parent(object, path);
     const func = object == null ? object : object[toKey(last(path))];

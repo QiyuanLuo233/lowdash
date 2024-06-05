@@ -6,7 +6,7 @@ import nodeTypes from './.internal/nodeTypes.js';
 const nodeIsDate = nodeTypes && nodeTypes.isDate;
 
 /**
- * Checks if `value` is classified as a `Date` object.
+ * 检查 value 是否是 Date 对象。
  *
  * @since 1.0.0
  * @category Lang

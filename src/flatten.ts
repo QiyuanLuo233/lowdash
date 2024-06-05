@@ -1,7 +1,7 @@
 import baseFlatten from './.internal/baseFlatten.js';
 
 /**
- * Flattens `array` a single level deep.
+ * 减少一级array嵌套深度。
  *
  * @since 1.0.0
  * @category Array
@@ -13,7 +13,7 @@ import baseFlatten from './.internal/baseFlatten.js';
  * flatten([1, [2, [3, [4]], 5]])
  * // => [1, 2, [3, [4]], 5]
  */
-function flatten(array) {
+function flatten(array:any []):any [] {
     const length = array == null ? 0 : array.length;
     return length ? baseFlatten(array, 1) : [];
 }

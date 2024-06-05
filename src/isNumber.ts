@@ -2,10 +2,8 @@ import getTag from './.internal/getTag.js';
 import isObjectLike from './isObjectLike.js';
 
 /**
- * Checks if `value` is classified as a `Number` primitive or object.
- *
- * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
- * classified as numbers, use the `Number.isFinite` method.
+ * 检查 value 是否是原始Number数值型 或者 对象。
+ * **Note:** 要排除 Infinity, -Infinity, 以及 NaN 数值类型，用_.isFinite 方法。
  *
  * @since 1.0.0
  * @category Lang
@@ -26,7 +24,7 @@ import isObjectLike from './isObjectLike.js';
  * isNumber('3')
  * // => false
  */
-function isNumber(value) {
+function isNumber(value):boolean {
     return (
         typeof value === 'number' || (isObjectLike(value) && getTag(value) === '[object Number]')
     );

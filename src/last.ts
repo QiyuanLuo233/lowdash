@@ -1,5 +1,5 @@
 /**
- * Gets the last element of `array`.
+ * 获取数组最后一项元素
  *
  * @since 1.0.0
  * @category Array
@@ -10,7 +10,7 @@
  * last([1, 2, 3])
  * // => 3
  */
-function last(array) {
+function last(array:any []):any {
     const length = array == null ? 0 : array.length;
     return length ? array[length - 1] : undefined;
 }

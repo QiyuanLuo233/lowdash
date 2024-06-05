@@ -3,12 +3,11 @@ import toFinite from './toFinite';
 import toNumber from './toNumber';
 
 /**
- * Checks if `number` is between `start` and up to, but not including, `end`. If
- * `end` is not specified, it's set to `start` with `start` then set to `0`.
- * If `start` is greater than `end` the params are swapped to support
- * negative ranges.
+ * 检查 n 是否在 start 与 end 之间，但不包括 end。
+ *  如果 end 没有指定，那么 start 设置为0。
+ *  如果 start 大于 end，那么参数会交换以便支持负范围。
  *
- * @since 3.3.0
+ * @since 1.0.0
  * @category Number
  * @param {number} number The number to check.
  * @param {number} [start=0] The start of the range.
@@ -38,7 +37,7 @@ import toNumber from './toNumber';
  * inRange(-3, -2, -6)
  * // => true
  */
-function inRange(number, start, end) {
+function inRange(number:number, start:number = 0, end?:number):boolean {
     start = toFinite(start);
     if (end === undefined) {
         end = start;

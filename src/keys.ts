@@ -2,9 +2,9 @@ import arrayLikeKeys from './.internal/arrayLikeKeys.js';
 import isArrayLike from './isArrayLike.js';
 
 /**
- * Creates an array of the own enumerable property names of `object`.
+ * 创建一个 object 的自身可枚举属性名为数组。
  *
- * **Note:** Non-object values are coerced to objects. See the
+ * **Note:** 非对象的值会被强制转换为对象，查看ES spec 了解详情。
  * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
  * for more details.
  *

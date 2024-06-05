@@ -1,5 +1,5 @@
 /**
- * Checks if `value` is classified as a `Function` object.
+ * 检查 value 是否是 Function 对象。
  *
  * @since 1.0.0
  * @category Lang
@@ -25,7 +25,7 @@
  * isFunction(/abc/)
  * // => false
  */
-function isFunction(value) {
+function isFunction(value):boolean {
     return typeof value === 'function';
 }
 

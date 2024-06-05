@@ -1,7 +1,7 @@
 /**
- * Checks if `value` is greater than or equal to `other`.
+ * 比较值是否大于等于
  *
- * @since 3.9.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to compare.
  * @param {*} other The other value to compare.
@@ -19,7 +19,7 @@
  * gte(1, 3)
  * // => false
  */
-function gte(value, other) {
+function gte(value:string | number, other:string | number):boolean {
     if (!(typeof value === 'string' && typeof other === 'string')) {
         value = +value;
         other = +other;

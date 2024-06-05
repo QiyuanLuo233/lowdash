@@ -4,9 +4,9 @@ import root from './.internal/root.js';
 const nativeIsBuffer = root?.Buffer?.isBuffer;
 
 /**
- * Checks if `value` is a buffer.
+ * 检查 value 是否是个 buffer。
  *
- * @since 4.3.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.

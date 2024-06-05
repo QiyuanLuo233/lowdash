@@ -2,8 +2,7 @@ import baseFindKey from './.internal/baseFindKey.js';
 import baseForOwnRight from './.internal/baseForOwnRight.js';
 
 /**
- * This method is like `findKey` except that it iterates over elements of
- * a collection in the opposite order.
+ * 这个方法类似_.findKey。 不过它是反方向开始遍历的。
  *
  * @since 1.0.0
  * @category Object
@@ -23,7 +22,7 @@ import baseForOwnRight from './.internal/baseForOwnRight.js';
  * findLastKey(users, ({ age }) => age < 40)
  * // => returns 'pebbles' assuming `findKey` returns 'barney'
  */
-function findLastKey(object, predicate) {
+function findLastKey(object:any, predicate:any) {
     return baseFindKey(object, predicate, baseForOwnRight);
 }
 

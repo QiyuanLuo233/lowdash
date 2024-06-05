@@ -1,6 +1,5 @@
 /**
- * Creates an array of function property names from own enumerable properties
- * of `object`.
+ * 创建一个函数属性名称的数组，函数属性名称来自object对象自身可枚举属性。
  *
  * @since 1.0.0
  * @category Object
@@ -19,7 +18,7 @@
  * functions(new Foo)
  * // => ['a', 'b']
  */
-function functions(object) {
+function functions(object):any [] {
     if (object == null) {
         return [];
     }

@@ -8,7 +8,7 @@ import toKey from './.internal/toKey.js';
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
- * Checks if `path` is a direct property of `object`.
+ * 检查 path 是否是object对象的直接属性。
  *
  * @since 1.0.0
  * @category Object

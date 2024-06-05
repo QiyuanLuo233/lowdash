@@ -2,9 +2,9 @@
 const MAX_SAFE_INTEGER = 9007199254740991;
 
 /**
- * Checks if `value` is a valid array-like length.
+ * 检查 value 是否为有效的类数组长度。
  *
- * **Note:** This method is loosely based on
+ * **Note:** 这个函数基于
  * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
  *
  * @since 1.0.0
@@ -25,7 +25,7 @@ const MAX_SAFE_INTEGER = 9007199254740991;
  * isLength('3')
  * // => false
  */
-function isLength(value) {
+function isLength(value):boolean {
     return typeof value === 'number' && value > -1 && value % 1 === 0 && value <= MAX_SAFE_INTEGER;
 }
 

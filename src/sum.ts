@@ -3,7 +3,7 @@ import baseSum from './.internal/baseSum.js';
 /**
  * Computes the sum of the values in `array`.
  *
- * @since 3.4.0
+ * @since 1.0.0
  * @category Math
  * @param {Array} array The array to iterate over.
  * @returns {number} Returns the sum.

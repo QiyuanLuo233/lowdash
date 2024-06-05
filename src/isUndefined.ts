@@ -1,5 +1,5 @@
 /**
- * Checks if `value` is `undefined`.
+ * 检查 value 是否是 undefined.
  *
  * @since 1.0.0
  * @category Lang
@@ -13,7 +13,7 @@
  * isUndefined(null)
  * // => false
  */
-function isUndefined(value) {
+function isUndefined(value):boolean {
     return value === undefined;
 }
 

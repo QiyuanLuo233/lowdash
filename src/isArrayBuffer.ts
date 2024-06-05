@@ -6,9 +6,9 @@ import nodeTypes from './.internal/nodeTypes.js';
 const nodeIsArrayBuffer = nodeTypes && nodeTypes.isArrayBuffer;
 
 /**
- * Checks if `value` is classified as an `ArrayBuffer` object.
+ * 检查 value 是否是 ArrayBuffer 对象。
  *
- * @since 4.3.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is an array buffer, else `false`.

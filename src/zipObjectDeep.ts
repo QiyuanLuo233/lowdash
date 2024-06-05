@@ -4,7 +4,7 @@ import baseZipObject from './.internal/baseZipObject.js';
 /**
  * This method is like `zipObject` except that it supports property paths.
  *
- * @since 4.1.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} [props=[]] The property identifiers.
  * @param {Array} [values=[]] The property values.

@@ -3,7 +3,7 @@ import createMathOperation from './.internal/createMathOperation.js';
 /**
  * Multiply two numbers.
  *
- * @since 4.7.0
+ * @since 1.0.0
  * @category Math
  * @param {number} multiplier The first number in a multiplication.
  * @param {number} multiplicand The second number in a multiplication.

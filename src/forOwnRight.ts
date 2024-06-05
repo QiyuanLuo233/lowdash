@@ -1,6 +1,5 @@
 /**
- * This method is like `forOwn` except that it iterates over properties of
- * `object` in the opposite order.
+ * 这个方法类似_.forOwn。 除了它是反方向开始遍历object的。
  *
  * @since 1.0.0
  * @category Object

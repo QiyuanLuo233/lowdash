@@ -9,7 +9,7 @@ const reTypedTag = /^\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Cla
 const nodeIsTypedArray = nodeTypes && nodeTypes.isTypedArray;
 
 /**
- * Checks if `value` is classified as a typed array.
+ * 检查 value 是否是TypedArray。
  *
  * @since 1.0.0
  * @category Lang

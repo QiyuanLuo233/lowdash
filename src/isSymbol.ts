@@ -1,7 +1,7 @@
 import getTag from './.internal/getTag.js';
 
 /**
- * Checks if `value` is classified as a `Symbol` primitive or object.
+ *检查 value 是否是原始 Symbol 或者对象。
  *
  * @since 1.0.0
  * @category Lang
@@ -15,7 +15,7 @@ import getTag from './.internal/getTag.js';
  * isSymbol('abc')
  * // => false
  */
-function isSymbol(value) {
+function isSymbol(value):boolean {
     const type = typeof value;
     return (
         type === 'symbol' ||

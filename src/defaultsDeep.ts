@@ -6,7 +6,7 @@ import mergeWith from './mergeWith.js';
  *
  * **Note:** 这方法会改变 object.
  *
- * @since 3.10.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The destination object.
  * @param {...Object} [sources] The source objects.

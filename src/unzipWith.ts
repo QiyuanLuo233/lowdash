@@ -6,7 +6,7 @@ import unzip from './unzip.js';
  * how regrouped values should be combined. The iteratee is invoked with the
  * elements of each group: (...group).
  *
- * @since 3.8.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array of grouped elements to process.
  * @param {Function} iteratee The function to combine

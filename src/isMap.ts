@@ -6,9 +6,8 @@ import nodeTypes from './.internal/nodeTypes.js';
 const nodeIsMap = nodeTypes && nodeTypes.isMap;
 
 /**
- * Checks if `value` is classified as a `Map` object.
- *
- * @since 4.3.0
+检查 value 是否为一个 Map 对象。 *
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a map, else `false`.

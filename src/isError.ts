@@ -3,8 +3,8 @@ import isObjectLike from './isObjectLike.js';
 import isPlainObject from './isPlainObject.js';
 
 /**
- * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
- * `SyntaxError`, `TypeError`, or `URIError` object.
+ * 检查 value 是否是 Error, EvalError, RangeError,
+ *  ReferenceError,SyntaxError, TypeError, 或者 URIError对象。
  *
  * @since 1.0.0
  * @category Lang
@@ -18,7 +18,7 @@ import isPlainObject from './isPlainObject.js';
  * isError(Error)
  * // => false
  */
-function isError(value) {
+function isError(value):boolean {
     if (!isObjectLike(value)) {
         return false;
     }

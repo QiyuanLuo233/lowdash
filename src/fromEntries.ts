@@ -1,6 +1,6 @@
 /**
- * The inverse of `entries`is method returns an object composed
- * from key-value `pairs`.
+ * 与_.toPairs正好相反；这个方法返回一个由键值对pairs构成的对象。
+ * 
  *
  * @since 1.0.0
  * @category Array
@@ -11,7 +11,7 @@
  * fromEntries([['a', 1], ['b', 2]])
  * // => { 'a': 1, 'b': 2 }
  */
-function fromEntries(pairs) {
+function fromEntries(pairs:any []) {
     const result = {};
     if (pairs == null) {
         return result;

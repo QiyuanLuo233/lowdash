@@ -9,15 +9,14 @@ import isTypedArray from './isTypedArray.js';
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
- * Checks if `value` is an empty object, collection, map, or set.
- *
- * Objects are considered empty if they have no own enumerable string keyed
- * properties.
- *
- * Array-like values such as `arguments` objects, arrays, buffers, strings, or
- * jQuery-like collections are considered empty if they have a `length` of `0`.
- * Similarly, maps and sets are considered empty if they have a `size` of `0`.
- *
+ * 检查 value 是否为一个空对象，集合，映射或者set。 
+ * 判断的依据是除非是有枚举属性的对象，
+ * length 大于 0 的 arguments object, array, string 或类jquery选择器。
+
+对象如果被认为为空，那么他们没有自己的可枚举属性的对象。
+
+类数组值，比如arguments对象，array，buffer，string或者类jQuery集合的length 为 0，
+被认为是空。类似的，map（映射）和set 的size 为 0，被认为是空。
  * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
@@ -42,7 +41,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
  * isEmpty({ 'a': 1 })
  * // => false
  */
-function isEmpty(value) {
+function isEmpty(value):boolean {
     if (value == null) {
         return true;
     }

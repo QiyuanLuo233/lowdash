@@ -4,7 +4,7 @@ import baseFlatten from './.internal/baseFlatten.js';
 const INFINITY = 1 / 0;
 
 /**
- * Recursively flattens `array`.
+ * 将array递归为一维数组。
  *
  * @since 1.0.0
  * @category Array
@@ -16,7 +16,7 @@ const INFINITY = 1 / 0;
  * flattenDeep([1, [2, [3, [4]], 5]])
  * // => [1, 2, 3, 4, 5]
  */
-function flattenDeep(array) {
+function flattenDeep(array:any []):any [] {
     const length = array == null ? 0 : array.length;
     return length ? baseFlatten(array, INFINITY) : [];
 }

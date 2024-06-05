@@ -1,7 +1,7 @@
 /**
- * Checks if `value` is greater than `other`.
+ * 比较值是否比其他大
  *
- * @since 3.9.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to compare.
  * @param {*} other The other value to compare.
@@ -19,7 +19,7 @@
  * gt(1, 3)
  * // => false
  */
-function gt(value, other) {
+function gt(value:string | number, other:any):boolean {
     if (!(typeof value === 'string' && typeof other === 'string')) {
         value = +value;
         other = +other;

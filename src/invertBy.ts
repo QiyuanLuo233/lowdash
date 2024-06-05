@@ -2,13 +2,12 @@
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
- * This method is like `invert` except that the inverted object is generated
- * from the results of running each element of `object` thru `iteratee`. The
- * corresponding inverted value of each inverted key is an array of keys
- * responsible for generating the inverted value. The iteratee is invoked
- * with one argument: (value).
+ * 这个方法类似_.invert，除了倒置对象
+ *  是 collection（集合）中的每个元素经过 iteratee（迭代函数） 处理后返回的结果。
+ * 每个反转键相应反转的值是一个负责生成反转值key的数组。
+ * iteratee 会传入3个参数：(value) 。
  *
- * @since 4.1.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to invert.
  * @param {Function} iteratee The iteratee invoked per element.
@@ -20,7 +19,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
  * invertBy(object, value => `group${value}`)
  * // => { 'group1': ['a', 'c'], 'group2': ['b'] }
  */
-function invertBy(object, iteratee) {
+function invertBy(object, iteratee):any {
     const result = {};
     Object.keys(object).forEach((key) => {
         const value = iteratee(object[key]);

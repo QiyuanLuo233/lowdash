@@ -2,13 +2,12 @@ import arrayEach from './.internal/arrayEach.js';
 import baseEach from './.internal/baseEach.js';
 
 /**
- * Iterates over elements of `collection` and invokes `iteratee` for each element.
- * The iteratee is invoked with three arguments: (value, index|key, collection).
- * Iteratee functions may exit iteration early by explicitly returning `false`.
+ * 调用 iteratee 遍历 collection(集合) 中的每个元素， iteratee 
+ * 调用3个参数： (value, index|key, collection)。 
+ * 如果迭代函数（iteratee）显式的返回 false ，迭代会提前退出。
  *
- * **Note:** As with other "Collections" methods, objects with a "length"
- * property are iterated like arrays. To avoid this behavior use `forIn`
- * or `forOwn` for object iteration.
+ * **Note:** 与其他"集合"方法一样，类似于数组，
+ * 对象的 "length" 属性也会被遍历。想避免这种情况，可以用_.forIn 或者_.forOwn 代替。
  *
  * @since 1.0.0
  * @alias each
@@ -25,7 +24,7 @@ import baseEach from './.internal/baseEach.js';
  * forEach({ 'a': 1, 'b': 2 }, (value, key) => console.log(key))
  * // => Logs 'a' then 'b' (iteration order is not guaranteed).
  */
-function forEach(collection, iteratee) {
+function forEach(collection:any, iteratee:any):any {
     const func = Array.isArray(collection) ? arrayEach : baseEach;
     return func(collection, iteratee);
 }

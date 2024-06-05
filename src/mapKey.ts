@@ -4,7 +4,7 @@
  * string keyed property of `object` thru `iteratee`. The iteratee is invoked
  * with three arguments: (value, key, object).
  *
- * @since 3.8.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

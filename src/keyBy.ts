@@ -2,10 +2,10 @@ import baseAssignValue from './.internal/baseAssignValue.js';
 import reduce from './reduce.js';
 
 /**
- * Creates an object composed of keys generated from the results of running
- * each element of `collection` thru `iteratee`. The corresponding value of
- * each key is the last element responsible for generating the key. The
- * iteratee is invoked with one argument: (value).
+ * 创建一个对象组成， key（键） 是 collection（集合）中的每个元素经过
+ *  iteratee（迭代函数） 处理后返回的结果。 
+ * 每个 key（键）对应的值是生成key（键）的最后一个元素。
+ * iteratee（迭代函数）调用1个参数：(value)。
  *
  * @since 1.0.0
  * @category Collection
@@ -23,7 +23,7 @@ import reduce from './reduce.js';
  * keyBy(array, ({ code }) => String.fromCharCode(code))
  * // => { 'a': { 'dir': 'left', 'code': 97 }, 'd': { 'dir': 'right', 'code': 100 } }
  */
-function keyBy(collection: any, iteratee: Function) {
+function keyBy(collection: any, iteratee: any) {
     return reduce(
         collection,
         (result: object, value: any) => {

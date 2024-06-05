@@ -5,10 +5,9 @@ import map from './map.js';
 const INFINITY = 1 / 0;
 
 /**
- * This method is like `flatMap` except that it recursively flattens the
- * mapped results.
+ * 这个方法类似_.flatMap 不同之处在于，_.flatMapDeep 会继续扁平化递归映射的结果。
  *
- * @since 4.7.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} iteratee The function invoked per iteration.
@@ -23,7 +22,7 @@ const INFINITY = 1 / 0;
  * flatMapDeep([1, 2], duplicate)
  * // => [1, 1, 2, 2]
  */
-function flatMapDeep(collection, iteratee) {
+function flatMapDeep(collection:any, iteratee:any):any [] {
     return baseFlatten(map(collection, iteratee), INFINITY);
 }
 

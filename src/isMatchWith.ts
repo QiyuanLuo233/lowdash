@@ -2,10 +2,9 @@ import baseIsMatch from './.internal/baseIsMatch.js';
 import getMatchData from './.internal/getMatchData.js';
 
 /**
- * This method is like `isMatch` except that it accepts `customizer` which
- * is invoked to compare values. If `customizer` returns `undefined`, comparisons
- * are handled by the method instead. The `customizer` is invoked with five
- * arguments: (objValue, srcValue, index|key, object, source).
+ * 这个方法类似_.isMatch。 除了它接受一个 customizer 定制比较的值。 
+ * 如果 customizer 返回 undefined 将会比较处理方法代替。 
+ * customizer 会传入5个参数：(objValue, srcValue, index|key, object, source)。
  *
  * @since 1.0.0
  * @category Lang
@@ -31,7 +30,7 @@ import getMatchData from './.internal/getMatchData.js';
  * isMatchWith(object, source, customizer)
  * // => true
  */
-function isMatchWith(object, source, customizer) {
+function isMatchWith(object, source, customizer):boolean {
     customizer = typeof customizer === 'function' ? customizer : undefined;
     return baseIsMatch(object, source, getMatchData(source), customizer);
 }

@@ -4,10 +4,9 @@ import castArrayLikeObject from './.internal/castArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `intersection` except that it accepts `comparator`
- * which is invoked to compare elements of `arrays`. The order and references
- * of result values are determined by the first array. The comparator is
- * invoked with two arguments: (arrVal, othVal).
+ * 这个方法类似_.intersection，区别是它接受一个 comparator 
+ * 调用比较arrays中的元素。结果值是从第一数组中选择。
+ * comparator 会传入两个参数：(arrVal, othVal)。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +21,7 @@ import last from './last.js';
  * intersectionWith(objects, others, isEqual)
  * // => [{ 'x': 1, 'y': 2 }]
  */
-function intersectionWith(...arrays) {
+function intersectionWith(...arrays):any [] {
     let comparator = last(arrays);
     const mapped = map(arrays, castArrayLikeObject);
 

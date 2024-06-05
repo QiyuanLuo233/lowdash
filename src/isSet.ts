@@ -6,9 +6,9 @@ import isObjectLike from './isObjectLike.js';
 const nodeIsSet = nodeTypes && nodeTypes.isSet;
 
 /**
- * Checks if `value` is classified as a `Set` object.
+ * 检查 value 是否是一个Set对象。
  *
- * @since 4.3.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to check.
  * @returns {boolean} Returns `true` if `value` is a set, else `false`.

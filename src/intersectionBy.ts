@@ -4,11 +4,9 @@ import castArrayLikeObject from './.internal/castArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `intersection` except that it accepts `iteratee`
- * which is invoked for each element of each `arrays` to generate the criterion
- * by which they're compared. The order and references of result values are
- * determined by the first array. The iteratee is invoked with one argument:
- * (value).
+ * 这个方法类似_.intersection，区别是它接受一个 iteratee
+ *  调用每一个arrays的每个值以产生一个值，通过产生的值进行了比较。
+ * 结果值是从第一数组中选择。iteratee 会传入一个参数：(value)。
  *
  * @since 1.0.0
  * @category Array
@@ -19,8 +17,10 @@ import last from './last.js';
  *
  * intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor)
  * // => [2.1]
+ * _.intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
+ * // => [{ 'x': 1 }]
  */
-function intersectionBy(...arrays) {
+function intersectionBy(...arrays):any [] {
     let iteratee = last(arrays);
     const mapped = map(arrays, castArrayLikeObject);
 

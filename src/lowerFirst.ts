@@ -1,7 +1,7 @@
 import createCaseFirst from './.internal/createCaseFirst.js';
 
 /**
- * Converts the first character of `string` to lower case.
+ * 转换字符串string的首字母为小写。
  *
  * @since 1.0.0
  * @category String

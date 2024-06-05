@@ -2,7 +2,7 @@ import isObjectLike from './isObjectLike.js';
 import isPlainObject from './isPlainObject.js';
 
 /**
- * Checks if `value` is likely a DOM element.
+ * 检查 value 是否是可能是 DOM 元素。
  *
  * @since 1.0.0
  * @category Lang
@@ -16,7 +16,7 @@ import isPlainObject from './isPlainObject.js';
  * isElement('<body>')
  * // => false
  */
-function isElement(value) {
+function isElement(value:any):boolean {
     return isObjectLike(value) && value.nodeType === 1 && !isPlainObject(value);
 }
 

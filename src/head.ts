@@ -1,5 +1,5 @@
 /**
- * Gets the first element of `array`.
+ * 获取数组 array 的第一个元素。
  *
  * @since 1.0.0
  * @alias first
@@ -15,7 +15,7 @@
  * head([])
  * // => undefined
  */
-function head(array) {
+function head(array:any) {
     return array != null && array.length ? array[0] : undefined;
 }
 

@@ -2,10 +2,10 @@ import baseFlatten from './.internal/baseFlatten.js';
 import map from './map.js';
 
 /**
- * This method is like `flatMap` except that it recursively flattens the
- * mapped results up to `depth` times.
+ * 该方法类似_.flatMap，不同之处在于，_.flatMapDepth 会根据指定的 depth（递归深度）
+ * 继续扁平化递归映射结果。
  *
- * @since 4.7.0
+ * @since 1.0.0
  * @category Collection
  * @param {Array|Object} collection The collection to iterate over.
  * @param {Function} iteratee The function invoked per iteration.
@@ -21,7 +21,7 @@ import map from './map.js';
  * flatMapDepth([1, 2], duplicate, 2)
  * // => [[1, 1], [2, 2]]
  */
-function flatMapDepth(collection, iteratee, depth) {
+function flatMapDepth(collection, iteratee, depth:number):any [] {
     depth = depth === undefined ? 1 : +depth;
     return baseFlatten(map(collection, iteratee), depth);
 }

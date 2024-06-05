@@ -3,7 +3,7 @@ import createRound from './.internal/createRound.js';
 /**
  * Computes `number` rounded to `precision`.
  *
- * @since 3.10.0
+ * @since 1.0.0
  * @category Math
  * @param {number} number The number to round.
  * @param {number} [precision=0] The precision to round to.

@@ -5,7 +5,7 @@ import invoke from './invoke.js';
  * the method at a given path of `object`. Any additional arguments are
  * provided to the invoked method.
  *
- * @since 3.7.0
+ * @since 1.0.0
  * @category Util
  * @param {Object} object The object to query.
  * @param {Array} [args] The arguments to invoke the method with.

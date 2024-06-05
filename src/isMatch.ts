@@ -2,15 +2,11 @@ import baseIsMatch from './.internal/baseIsMatch.js';
 import getMatchData from './.internal/getMatchData.js';
 
 /**
- * Performs a partial deep comparison between `object` and `source` to
- * determine if `object` contains equivalent property values.
+ * 执行一个深度比较，来确定 object 是否含有和 source 完全相等的属性值。
  *
- * **Note:** This method is equivalent to `matches` when `source` is
- * partially applied.
- *
- * Partial comparisons will match empty array and empty object `source`
- * values against any array or object value, respectively. See `isEqual`
- * for a list of supported value comparisons.
+ * **Note:** 当source为偏应用时，这种方法等价于_.matches。
+ * （注：关于偏应用大家可以自己到google上搜索一下）。
+ * 偏应用比较匹配空数组和空对象source值分别针对任何数组或对象的价值。在_.isEqual中查看支持的值比较列表。
  *
  * @since 1.0.0
  * @category Lang
@@ -27,7 +23,7 @@ import getMatchData from './.internal/getMatchData.js';
  * isMatch(object, { 'b': 1 })
  * // => false
  */
-function isMatch(object, source) {
+function isMatch(object, source):boolean {
     return object === source || baseIsMatch(object, source, getMatchData(source));
 }
 

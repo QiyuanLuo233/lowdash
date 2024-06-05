@@ -2,8 +2,8 @@ import getTag from './.internal/getTag.js';
 import isObjectLike from './isObjectLike.js';
 
 /**
- * Checks if `value` is a plain object, that is, an object created by the
- * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ * 检查 value 是否是普通对象。
+ *  也就是说该对象由 Object 构造函数创建，或者 [[Prototype]] 为 null 。
  *
  * @since 1.0.0
  * @category Lang
@@ -27,7 +27,7 @@ import isObjectLike from './isObjectLike.js';
  * isPlainObject(Object.create(null))
  * // => true
  */
-function isPlainObject(value) {
+function isPlainObject(value):boolean {
     if (!isObjectLike(value) || getTag(value) !== '[object Object]') {
         return false;
     }

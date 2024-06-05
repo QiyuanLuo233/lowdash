@@ -1,5 +1,5 @@
 /**
- * Checks if `value` is `null` or `undefined`.
+ * 检查 value 是否是 null 或者 undefined。
  *
  * @since 1.0.0
  * @category Lang
@@ -16,7 +16,7 @@
  * isNil(NaN)
  * // => false
  */
-function isNil(value) {
+function isNil(value):boolean {
     return value == null;
 }
 

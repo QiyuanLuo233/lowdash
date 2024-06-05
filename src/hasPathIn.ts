@@ -5,7 +5,7 @@ import isLength from './isLength.js';
 import toKey from './.internal/toKey.js';
 
 /**
- * Checks if `path` is a direct property of `object`.
+ * 检查 path 是否是object对象的直接或继承属性。
  *
  * @since 1.0.0
  * @category Object

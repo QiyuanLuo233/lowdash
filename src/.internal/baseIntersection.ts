@@ -14,12 +14,12 @@ import cacheHas from './cacheHas.js'
  * @param {Function} [comparator] The comparator invoked per element.
  * @returns {Array} Returns the new array of shared values.
  */
-function baseIntersection(arrays, iteratee, comparator) {
+function baseIntersection(arrays, iteratee?:any, comparator?:any) {
   const includes = comparator ? arrayIncludesWith : arrayIncludes
   const length = arrays[0].length
   const othLength = arrays.length
   const caches = new Array(othLength)
-  const result = []
+  const result:any [] = []
 
   let array
   let maxLength = Infinity

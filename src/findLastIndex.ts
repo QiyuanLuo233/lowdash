@@ -2,8 +2,7 @@ import baseFindIndex from './.internal/baseFindIndex.js';
 import toInteger from './toInteger.js';
 
 /**
- * This method is like `findIndex` except that it iterates over elements
- * of `collection` from right to left.
+ * 这个方式类似_.findIndex， 区别是它是从右到左的迭代集合array中的元素。
  *
  * @since 1.0.0
  * @category Array
@@ -23,7 +22,7 @@ import toInteger from './toInteger.js';
  * findLastIndex(users, ({ user }) => user === 'pebbles')
  * // => 2
  */
-function findLastIndex(array, predicate, fromIndex) {
+function findLastIndex(array:any [], predicate:any, fromIndex:number) {
     const length = array == null ? 0 : array.length;
     if (!length) {
         return -1;

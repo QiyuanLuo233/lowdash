@@ -1,8 +1,7 @@
 /**
- * Iterates over own enumerable string keyed properties of an object and
- * invokes `iteratee` for each property. The iteratee is invoked with three
- * arguments: (value, key, object). Iteratee functions may exit iteration
- * early by explicitly returning `false`.
+ * 使用 iteratee 遍历自身的可枚举属性。
+ *  iteratee 会传入3个参数：(value, key, object)。 
+ * 如果返回 false，iteratee 会提前退出遍历。
  *
  * @since 1.0.0
  * @category Object
@@ -23,7 +22,7 @@
  * })
  * // => Logs 'a' then 'b' (iteration order is not guaranteed).
  */
-function forOwn(object, iteratee) {
+function forOwn(object:any, iteratee:any) {
     object = Object(object);
     Object.keys(object).forEach((key) => iteratee(object[key], key, object));
 }

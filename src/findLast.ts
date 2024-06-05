@@ -2,8 +2,7 @@ import findLastIndex from './findLastIndex.js';
 import isArrayLike from './isArrayLike.js';
 
 /**
- * This method is like `find` except that it iterates over elements of
- * `collection` from right to left.
+ * 这个方法类似_.find ，不同之处在于，_.findLast是从右至左遍历collection （集合）元素的。
  *
  * @since 1.0.0
  * @category Collection
@@ -17,7 +16,7 @@ import isArrayLike from './isArrayLike.js';
  * findLast([1, 2, 3, 4], n => n % 2 === 1)
  * // => 3
  */
-function findLast(collection, predicate, fromIndex) {
+function findLast(collection:any, predicate:any, fromIndex:number) {
     let iteratee;
     const iterable = Object(collection);
     if (!isArrayLike(collection)) {

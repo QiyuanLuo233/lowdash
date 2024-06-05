@@ -2,10 +2,8 @@ import baseIndexOf from './.internal/baseIndexOf.js';
 import toInteger from './toInteger.js';
 
 /**
- * Gets the index at which the first occurrence of `value` is found in `array`
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * for equality comparisons. If `fromIndex` is negative, it's used as the
- * offset from the end of `array`.
+ * 使用SameValueZero 等值比较，返回首次 value 在数组array中被找到的 索引值，
+ *  如果 fromIndex 为负值，将从数组array尾端索引进行匹配。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +20,7 @@ import toInteger from './toInteger.js';
  * indexOf([1, 2, 1, 2], 2, 2)
  * // => 3
  */
-function indexOf(array, value, fromIndex) {
+function indexOf(array:any, value:any, fromIndex?:number) {
     const length = array == null ? 0 : array.length;
     if (!length) {
         return -1;

@@ -3,10 +3,8 @@ import baseIntersection from './.internal/baseIntersection.js';
 import castArrayLikeObject from './.internal/castArrayLikeObject.js';
 
 /**
- * Creates an array of unique values that are included in all given arrays
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * for equality comparisons. The order and references of result values are
- * determined by the first array.
+ * 创建唯一值的数组，这个数组包含所有给定数组都包含的元素，
+ * 使用SameValueZero进行相等性比较。（注：可以理解为给定数组的交集）
  *
  * @since 1.0.0
  * @category Array
@@ -17,7 +15,7 @@ import castArrayLikeObject from './.internal/castArrayLikeObject.js';
  * intersection([2, 1], [2, 3])
  * // => [2]
  */
-function intersection(...arrays) {
+function intersection(...arrays:any):any [] {
     const mapped = map(arrays, castArrayLikeObject);
     return mapped.length && mapped[0] === arrays[0] ? baseIntersection(mapped) : [];
 }

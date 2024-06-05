@@ -2,8 +2,8 @@ import arrayEachRight from './.internal/arrayEachRight.js';
 import baseEachRight from './.internal/baseEachRight.js';
 
 /**
- * This method is like `forEach` except that it iterates over elements of
- * `collection` from right to left.
+ * 这个方法类似_.forEach，不同之处在于，_.forEachRight 
+ * 是从右到左遍历集合中每一个元素的。
  *
  * @since 1.0.0
  * @alias eachRight

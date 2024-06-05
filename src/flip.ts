@@ -1,5 +1,5 @@
 /**
- * Creates a function that invokes `func` with arguments reversed.
+ * 创建一个函数，调用func时候接收翻转的参数。
  *
  * @since 1.0.0
  * @category Function
@@ -13,7 +13,7 @@
  * flipped('a', 'b', 'c', 'd')
  * // => ['d', 'c', 'b', 'a']
  */
-function flip(func) {
+function flip(func:any):any {
     if (typeof func !== 'function') {
         throw new TypeError('Expected a function');
     }

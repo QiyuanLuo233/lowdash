@@ -6,7 +6,7 @@ import nodeTypes from './.internal/nodeTypes.js';
 const nodeIsRegExp = nodeTypes && nodeTypes.isRegExp;
 
 /**
- * Checks if `value` is classified as a `RegExp` object.
+ * 检查 value 是否为RegExp对象。
  *
  * @since 1.0.0
  * @category Lang

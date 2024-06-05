@@ -2,7 +2,7 @@
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
- * Checks if `key` is a direct property of `object`.
+ * 检查 path 是否是object对象的直接属性。
  *
  * @since 1.0.0
  * @category Object
@@ -21,7 +21,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty;
  * has(other, 'a')
  * // => false
  */
-function has(object, key) {
+function has(object, key):boolean {
     return object != null && hasOwnProperty.call(object, key);
 }
 

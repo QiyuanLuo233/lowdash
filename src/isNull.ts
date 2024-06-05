@@ -1,5 +1,5 @@
 /**
- * Checks if `value` is `null`.
+ * 检查 value 是否是 null。
  *
  * @since 1.0.0
  * @category Lang
@@ -13,7 +13,7 @@
  * isNull(void 0)
  * // => false
  */
-function isNull(value) {
+function isNull(value):boolean {
     return value === null;
 }
 
