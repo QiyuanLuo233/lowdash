@@ -1,8 +1,7 @@
 import createRange from './.internal/createRange.js';
 
 /**
- * This method is like `range` except that it populates values in
- * descending order.
+ * 这个方法类似_.range ， 除了它是降序生成值的。
  *
  * @since 1.0.0
  * @category Util

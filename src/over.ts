@@ -1,8 +1,7 @@
 import map from './map.js';
 
 /**
- * Creates a function that invokes `iteratees` with the arguments it receives
- * and returns their results.
+ * 创建一个函数，传入提供的参数的函数并调用 iteratees 返回结果。
  *
  * @since 1.0.0
  * @category Util

@@ -1,11 +1,9 @@
 import baseOrderBy from './.internal/baseOrderBy.js';
 
 /**
- * This method is like `sortBy` except that it allows specifying the sort
- * orders of the iteratees to sort by. If `orders` is unspecified, all values
- * are sorted in ascending order. Otherwise, specify an order of "desc" for
- * descending or "asc" for ascending sort order of corresponding values.
- * You may also specify a compare function for an order.
+ * 此方法类似于_.sortBy，除了它允许指定 iteratee（迭代函数）结果如何排序。
+ *  如果没指定 orders（排序），所有值以升序排序。 
+ * 否则，指定为"desc" 降序，或者指定为 "asc" 升序，排序对应值。
  *
  * @since 1.0.0
  * @category Collection
@@ -35,7 +33,7 @@ import baseOrderBy from './.internal/baseOrderBy.js';
  * ])
  *
  */
-function orderBy(collection, iteratees, orders) {
+function orderBy(collection, iteratees, orders:string []):any [] {
     if (collection == null) {
         return [];
     }

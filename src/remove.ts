@@ -1,12 +1,10 @@
 import basePullAt from './.internal/basePullAt.js';
 
 /**
- * Removes all elements from `array` that `predicate` returns truthy for
- * and returns an array of the removed elements. The predicate is invoked
- * with three arguments: (value, index, array).
+ * 移除数组中predicate（断言）返回为真值的所有元素，
+ * 并返回移除元素组成的数组。predicate（断言） 会传入3个参数： (value, index, array)。
  *
- * **Note:** Unlike `filter`, this method mutates `array`. Use `pull`
- * to pull elements from an array by value.
+ * **Note:** 和_.filter不同, 这个方法会改变数组 array。使用_.pull来根据提供的value值从数组中移除元素。
  *
  * @since 1.0.0
  * @category Array
@@ -25,13 +23,13 @@ import basePullAt from './.internal/basePullAt.js';
  * console.log(evens)
  * // => [2, 4]
  */
-function remove(array, predicate) {
-    const result = [];
+function remove(array:any [], predicate):any [] {
+    const result:any [] = [];
     if (!(array != null && array.length)) {
         return result;
     }
     let index = -1;
-    const indexes = [];
+    const indexes:any [] = [];
     const { length } = array;
 
     while (++index < length) {

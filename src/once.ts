@@ -1,9 +1,9 @@
 import before from './before.js';
 
 /**
- * Creates a function that is restricted to invoking `func` once. Repeat calls
- * to the function return the value of the first invocation. The `func` is
- * invoked with the `this` binding and arguments of the created function.
+ * 创建一个只能调用 func 一次的函数。 重复调用返回第一次调用的结果。
+ * func 调用时， this 绑定到创建的函数，并传入对应参数。基于_.before，
+ * 不如直接用这个，设置次数即可。
  *
  * @since 1.0.0
  * @category Function

@@ -2,9 +2,8 @@ import castPath from './.internal/castPath.js';
 import toKey from './.internal/toKey.js';
 
 /**
- * This method is like `get` except that if the resolved value is a
- * function it's invoked with the `this` binding of its parent object and
- * its result is returned.
+ * 这个方法类似_.get， 除了如果解析到的值是一个函数的话，
+ * 就绑定 this 到这个函数并返回执行后的结果。
  *
  * @since 1.0.0
  * @category Object

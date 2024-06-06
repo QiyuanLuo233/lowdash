@@ -1,5 +1,5 @@
 /**
- * Creates a function that invokes `func` with its arguments transformed.
+ * 创建一个函数，调用func时参数为相对应的transforms的返回值。
  *
  * @since 1.0.0
  * @category Function

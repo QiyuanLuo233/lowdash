@@ -1,9 +1,8 @@
 import invoke from './invoke.js';
 
 /**
- * The opposite of `method` this method creates a function that invokes
- * the method at a given path of `object`. Any additional arguments are
- * provided to the invoked method.
+ * _.method的反向版。 这个创建一个函数调用给定 object 的 path 上的方法， 
+ * 任何附加的参数都会传入这个调用函数
  *
  * @since 1.0.0
  * @category Util

@@ -7,7 +7,7 @@ const MAX_INTEGER = 1.7976931348623157e308;
 /**
  * Converts `value` to a finite number.
  *
- * @since 4.12.0
+ * @since 1.0.0
  * @category Lang
  * @param {*} value The value to convert.
  * @returns {number} Returns the converted number.

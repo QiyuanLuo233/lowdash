@@ -1,8 +1,7 @@
 import some from './some.js';
 
 /**
- * Creates a function that checks if **any** of the `predicates` return
- * truthy when invoked with the arguments it receives.
+ * 创建一个函数，传入提供的参数的函数并调用 predicates 判断是否 存在 有真值。
  *
  * @since 1.0.0
  * @category Util

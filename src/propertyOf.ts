@@ -1,8 +1,7 @@
 import baseGet from './.internal/baseGet.js';
 
 /**
- * The opposite of `property`s method creates a function that returns
- * the value at a given path of `object`.
+ * _.property的反相版本。 这个方法创建的函数返回给定 path 在object上的值。
  *
  * @since 1.0.0
  * @category Util

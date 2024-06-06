@@ -1,7 +1,7 @@
 import basePullAll from './.internal/basePullAll.js';
 
 /**
- * This method is like `pull` except that it accepts an array of values to remove.
+ * 这个方法类似_.pull，区别是这个方法接收一个要移除值的数组。
  *
  * **Note:** Unlike `difference`, this method mutates `array`.
  *
@@ -19,7 +19,7 @@ import basePullAll from './.internal/basePullAll.js';
  * console.log(array)
  * // => ['b', 'b']
  */
-function pullAll(array, values) {
+function pullAll(array:any [], values):any [] {
     return array != null && array.length && values != null && values.length
         ? basePullAll(array, values)
         : array;

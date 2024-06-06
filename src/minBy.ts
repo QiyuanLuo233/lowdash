@@ -1,9 +1,8 @@
 import isSymbol from './isSymbol.js';
 
 /**
- * This method is like `min` except that it accepts `iteratee` which is
- * invoked for each element in `array` to generate the criterion by which
- * the value is ranked. The iteratee is invoked with one argument: (value).
+ * 这个方法类似_.min 除了它接受 iteratee 来调用 array中的每一个元素，
+ * 来生成其值排序的标准。 iteratee 会调用1个参数: (value) 。
  *
  * @since 1.0.0
  * @category Math
@@ -17,7 +16,7 @@ import isSymbol from './isSymbol.js';
  * minBy(objects, ({ n }) => n)
  * // => { 'n': 1 }
  */
-function minBy(array, iteratee) {
+function minBy(array:any [], iteratee):number {
     let result;
     if (array == null) {
         return result;

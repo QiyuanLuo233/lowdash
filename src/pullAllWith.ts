@@ -1,11 +1,10 @@
 import basePullAll from './.internal/basePullAll.js';
 
 /**
- * This method is like `pullAll` except that it accepts `comparator` which
- * is invoked to compare elements of `array` to `values`. The comparator is
- * invoked with two arguments: (arrVal, othVal).
+ * 这个方法类似于_.pullAll，区别是这个方法接受 comparator 
+ * 调用array中的元素和values比较。comparator 会传入两个参数：(arrVal, othVal)。
  *
- * **Note:** Unlike `differenceWith`, this method mutates `array`.
+ * **Note:** 不同于_.differenceBy, 这个方法会改变数组 array。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +21,7 @@ import basePullAll from './.internal/basePullAll.js';
  * console.log(array)
  * // => [{ 'x': 1, 'y': 2 }, { 'x': 5, 'y': 6 }]
  */
-function pullAllWith(array, values, comparator) {
+function pullAllWith(array:any [], values:any [], comparator):any [] {
     return array != null && array.length && values != null && values.length
         ? basePullAll(array, values, undefined, comparator)
         : array;

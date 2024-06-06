@@ -2,15 +2,12 @@ import baseMerge from './.internal/baseMerge.js';
 import createAssigner from './.internal/createAssigner.js';
 
 /**
- * This method is like `assign` except that it recursively merges own and
- * inherited enumerable string keyed properties of source objects into the
- * destination object. Source properties that resolve to `undefined` are
- * skipped if a destination value exists. Array and plain object properties
- * are merged recursively. Other objects and value types are overridden by
- * assignment. Source objects are applied from left to right. Subsequent
- * sources overwrite property assignments of previous sources.
+ * 该方法类似_.assign， 除了它递归合并 sources 来源对象自身和继承的可枚举属性到 object 目标对象。
+ * 如果目标值存在，被解析为undefined的sources 来源对象属性将被跳过。
+ * 数组和普通对象会递归合并，其他对象和值会被直接分配覆盖。源对象从从左到右分配。
+ * 后续的来源对象属性会覆盖之前分配的属性。
  *
- * **Note:** This method mutates `object`.
+ * **Note:** 这方法会改变对象 object.
  *
  * @since 1.0.0
  * @category Object

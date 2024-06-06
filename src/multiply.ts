@@ -1,7 +1,7 @@
 import createMathOperation from './.internal/createMathOperation.js';
 
 /**
- * Multiply two numbers.
+ * 两个数的乘积
  *
  * @since 1.0.0
  * @category Math

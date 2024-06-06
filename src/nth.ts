@@ -1,10 +1,10 @@
 import isIndex from './.internal/isIndex.js';
 
 /**
- * Gets the element at index `n` of `array`. If `n` is negative, the nth
- * element from the end is returned.
+ * 获取array数组的第n个元素。如果n为负数，
+ * 则返回从数组结尾开始的第n个元素。（很鸡肋，原生就可以做到）
  *
- * @since 4.11.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array to query.
  * @param {number} [n=0] The index of the element to return.

@@ -1,7 +1,7 @@
 import baseMean from './meanBy.js';
 
 /**
- * Computes the mean of the values in `array`.
+ * 计算 array 的平均值。
  *
  * @since 1.0.0
  * @category Math
@@ -12,7 +12,7 @@ import baseMean from './meanBy.js';
  * mean([4, 2, 8, 6])
  * // => 5
  */
-function mean(array) {
+function mean(array:any []):number {
     return baseMean(array, (value) => value);
 }
 

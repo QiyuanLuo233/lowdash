@@ -2,8 +2,8 @@ import createPadding from './.internal/createPadding.js';
 import stringSize from './.internal/stringSize.js';
 
 /**
- * Pads `string` on the left side if it's shorter than `length`. Padding
- * characters are truncated if they exceed `length`.
+ * 如果string字符串长度小于 length 则从左侧填充字符。
+ *  如果没法平均分配，则截断超出的长度。
  *
  * @since 1.0.0
  * @category String
@@ -22,7 +22,7 @@ import stringSize from './.internal/stringSize.js';
  * padStart('abc', 2)
  * // => 'abc'
  */
-function padStart(string, length, chars) {
+function padStart(string:string, length:number, chars):string {
     const strLength = length ? stringSize(string) : 0;
     return length && strLength < length
         ? createPadding(length - strLength, chars) + string

@@ -6,7 +6,7 @@ import keys from './keys.js';
  *
  * **Note:** 当source为偏应用时，这种方法等价于_.conforms。（注：关于偏应用大家可以自己到google上搜索一下）。
  *
- * @since 4.14.0
+ * @since 1.0.0
  * @category Lang
  * @param {Object} object The object to inspect.
  * @param {Object} source The object of property predicates to conform to.

@@ -1,13 +1,11 @@
 import createRange from './.internal/createRange.js';
 
 /**
- * Creates an array of numbers (positive and/or negative) progressing from
- * `start` up to, but not including, `end`. A step of `-1` is used if a negative
- * `start` is specified without an `end` or `step`. If `end` is not specified,
- * it's set to `start`, and `start` is then set to `0`.
+ * 创建一个包含从 start 到 end，但不包含 end 本身范围数字的数组。
+ *  如果 start 是负数，而 end 或 step 没有指定，那么 step 从 -1 为开始。
+ *  如果 end 没有指定，start 设置为 0。 如果 end 小于 start ，会创建一个空数组，除非指定了 step。
  *
- * **Note:** JavaScript follows the IEEE-754 standard for resolving
- * floating-point values which can produce unexpected results.
+ * **Note:** JavaScript 遵循 IEEE-754 标准处理无法预料的浮点数结果。
  *
  * @since 1.0.0
  * @category Util

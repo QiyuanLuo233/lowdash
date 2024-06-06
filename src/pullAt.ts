@@ -5,10 +5,9 @@ import compareAscending from './.internal/compareAscending.js';
 import isIndex from './.internal/isIndex.js';
 
 /**
- * Removes elements from `array` corresponding to `indexes` and returns an
- * array of removed elements.
+ * 根据索引 indexes，移除array中对应的元素，并返回被移除元素的数组。
  *
- * **Note:** Unlike `at`, this method mutates `array`.
+ * **Note:** 和_.at不同, 这个方法会改变数组 array。
  *
  * @since 1.0.0
  * @category Array
@@ -27,7 +26,7 @@ import isIndex from './.internal/isIndex.js';
  * console.log(pulled)
  * // => ['b', 'd']
  */
-function pullAt(array, ...indexes) {
+function pullAt(array:any [], ...indexes):any [] {
     const length = array == null ? 0 : array.length;
     const result = baseAt(array, indexes);
 

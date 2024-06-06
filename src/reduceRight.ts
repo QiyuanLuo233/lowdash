@@ -3,8 +3,7 @@ import baseEachRight from './.internal/baseEachRight.js';
 import baseReduce from './.internal/baseReduce.js';
 
 /**
- * This method is like `reduce` except that it iterates over elements of
- * `collection` from right to left.
+ * 这个方法类似_.reduce ，除了它是从右到左遍历collection（集合）中的元素的。
  *
  * @since 1.0.0
  * @category Collection

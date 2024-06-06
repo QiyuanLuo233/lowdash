@@ -1,10 +1,8 @@
 import reduce from './reduce.js';
 
 /**
- * Creates an array of elements split into two groups, the first of which
- * contains elements `predicate` returns truthy for, the second of which
- * contains elements `predicate` returns falsey for. The predicate is
- * invoked with one argument: (value).
+ * 创建一个分成两组的元素数组，第一组包含predicate（断言函数）返回为 truthy（真值）的元素，
+ * 第二组包含predicate（断言函数）返回为 falsey（假值）的元素。predicate 调用1个参数：(value)。
  *
  * @since 1.0.0
  * @category Collection

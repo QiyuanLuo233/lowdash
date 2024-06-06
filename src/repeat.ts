@@ -1,5 +1,5 @@
 /**
- * Repeats the given string `n` times.
+ * 重复 N 次给定字符串
  *
  * @since 1.0.0
  * @category String
@@ -17,7 +17,7 @@
  * repeat('abc', 0)
  * // => ''
  */
-function repeat(string, n) {
+function repeat(string:string, n:number):string {
     let result = '';
     if (!string || n < 1 || n > Number.MAX_SAFE_INTEGER) {
         return result;

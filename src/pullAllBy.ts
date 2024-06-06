@@ -1,11 +1,11 @@
 import basePullAll from './.internal/basePullAll.js';
 
 /**
- * This method is like `pullAll` except that it accepts `iteratee` which is
- * invoked for each element of `array` and `values` to generate the criterion
- * by which they're compared. The iteratee is invoked with one argument: (value).
+ * 这个方法类似于_.pullAll ，区别是这个方法接受一个 iteratee（迭代函数） 
+ * 调用 array 和 values的每个值以产生一个值，通过产生的值进行了比较。
+ * iteratee 会传入一个参数： (value)。
  *
- * **Note:** Unlike `differenceBy`, this method mutates `array`.
+ * **Note:**  不同于_.differenceBy, 这个方法会改变数组 array。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +22,7 @@ import basePullAll from './.internal/basePullAll.js';
  * console.log(array)
  * // => [{ 'x': 2 }]
  */
-function pullAllBy(array, values, iteratee) {
+function pullAllBy(array:any [], values, iteratee) {
     return array != null && array.length && values != null && values.length
         ? basePullAll(array, values, iteratee)
         : array;

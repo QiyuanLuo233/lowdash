@@ -7,7 +7,7 @@ import isArrayLikeObject from './isArrayLikeObject.js';
  * of the given arrays. The order of result values is determined by the order
  * they occur in the arrays.
  *
- * @since 2.4.0
+ * @since 1.0.0
  * @category Array
  * @param {...Array} [arrays] The arrays to inspect.
  * @returns {Array} Returns the new array of filtered values.

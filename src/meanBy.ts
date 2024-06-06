@@ -4,9 +4,8 @@ import baseSum from './.internal/baseSum.js';
 const NAN = 0 / 0;
 
 /**
- * This method is like `mean` except that it accepts `iteratee` which is
- * invoked for each element in `array` to generate the value to be averaged.
- * The iteratee is invoked with one argument: (value).
+ * 这个方法类似_.mean， 除了它接受 iteratee 来调用 array中的每一个元素，
+ * 来生成其值排序的标准。 iteratee 会调用1个参数: (value) 。
  *
  * @since 1.0.0
  * @category Math
@@ -20,7 +19,7 @@ const NAN = 0 / 0;
  * meanBy(objects, ({ n }) => n)
  * // => 5
  */
-function meanBy(array, iteratee) {
+function meanBy(array:any [], iteratee):number {
     const length = array == null ? 0 : array.length;
     return length ? baseSum(array, iteratee) / length : NAN;
 }

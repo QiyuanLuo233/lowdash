@@ -3,8 +3,8 @@ import filterObject from './filterObject.js';
 import negate from './negate.js';
 
 /**
- * The opposite of `filter` this method returns the elements of `collection`
- * that `predicate` does **not** return truthy for.
+ * _.filter的反向方法;此方法 返回 predicate（断言函数） 
+ * 不 返回 truthy（真值）的collection（集合）元素（注释：非真）。
  *
  * @since 1.0.0
  * @category Collection

@@ -4,13 +4,11 @@ import toFinite from './toFinite.js';
 const freeParseFloat = parseFloat;
 
 /**
- * Produces a random number between the inclusive `lower` and `upper` bounds.
- * If only one argument is provided a number between `0` and the given number
- * is returned. If `floating` is `true`, or either `lower` or `upper` are
- * floats, a floating-point number is returned instead of an integer.
+ * 产生一个包括 lower 与 upper 之间的数。
+ *  如果只提供一个参数返回一个0到提供数之间的数。 
+ * 如果 floating 设为 true，或者 lower 或 upper 是浮点数，结果返回浮点数。
  *
- * **Note:** JavaScript follows the IEEE-754 standard for resolving
- * floating-point values which can produce unexpected results.
+ * **Note:** JavaScript 遵循 IEEE-754 标准处理无法预料的浮点数结果。
  *
  * @since 1.0.0
  * @category Number
@@ -33,7 +31,7 @@ const freeParseFloat = parseFloat;
  * random(1.2, 5.2)
  * // => a floating-point number between 1.2 and 5.2
  */
-function random(lower, upper, floating) {
+function random(lower:number|any, upper, floating:boolean) {
     if (floating === undefined) {
         if (typeof upper === 'boolean') {
             floating = upper;

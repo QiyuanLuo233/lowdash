@@ -3,8 +3,8 @@ import basePickBy from './.internal/basePickBy.js';
 import getAllKeysIn from './.internal/getAllKeysIn.js';
 
 /**
- * Creates an object composed of the `object` properties `predicate` returns
- * truthy for. The predicate is invoked with two arguments: (value, key).
+ * 创建一个对象，这个对象组成为从 object 中经 predicate 判断为真值的属性。 
+ * predicate调用2个参数：(value, key)。
  *
  * @since 1.0.0
  * @category Object

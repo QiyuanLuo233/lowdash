@@ -1,7 +1,7 @@
 /**
- * Replaces matches for `pattern` in `string` with `replacement`.
+ * 替换string字符串中匹配的pattern为给定的replacement 。
  *
- * **Note:** This method is based on
+ * **Note:** 这个方法基于String#replace.
  * [`String#replace`](https://mdn.io/String/replace).
  *
  * @since 1.0.0
@@ -16,7 +16,7 @@
  * replace('Hi Fred', 'Fred', 'Barney')
  * // => 'Hi Barney'
  */
-function replace(...args) {
+function replace(...args):string {
     const string = `${args[0]}`;
     return args.length < 3 ? string : string.replace(args[1], args[2]);
 }

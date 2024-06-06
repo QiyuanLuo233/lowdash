@@ -3,19 +3,20 @@ import baseEach from './.internal/baseEach.js';
 import baseReduce from './.internal/baseReduce.js';
 
 /**
- * Reduces `collection` to a value which is the accumulated result of running
- * each element in `collection` thru `iteratee`, where each successive
- * invocation is supplied the return value of the previous. If `accumulator`
- * is not given, the first element of `collection` is used as the initial
- * value. The iteratee is invoked with four arguments:
- * (accumulator, value, index|key, collection).
- *
- * Many lodash methods are guarded to work as iteratees for methods like
- * `reduce`, `reduceRight`, and `transform`.
- *
- * The guarded methods are:
- * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
- * and `sortBy`
+ * 压缩 collection（集合）为一个值，通过 iteratee（迭代函数）
+ * 遍历 collection（集合）中的每个元素，每次返回的值会作为下一次迭代使用
+ * (注：作为iteratee（迭代函数）的第一个参数使用)。 如果没有提供 accumulator，
+ * 则 collection（集合）中的第一个元素作为初始值。
+ * (注：accumulator参数在第一次迭代的时候作为iteratee（迭代函数）第一个参数使用。) iteratee 调用4个参数：
+(accumulator, value, index|key, collection).
+
+lodash 中有许多方法是防止作为其他方法的迭代函数
+
+（注：即不能作为iteratee参数传递给其他方法），例如：_.reduce,_.reduceRight, 和_.transform。
+
+受保护的方法有（注：即这些方法不能使用_.reduce,_.reduceRight, 和_.transform作为 iteratee 迭代函数参数）：
+
+assign, defaults, defaultsDeep, includes, merge, orderBy, 和 sortBy
  *
  * @since 1.0.0
  * @category Collection

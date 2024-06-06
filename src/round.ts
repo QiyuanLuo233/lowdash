@@ -1,7 +1,7 @@
 import createRound from './.internal/createRound.js';
 
 /**
- * Computes `number` rounded to `precision`.
+ * 根据 precision（精度） 四舍五入 number。
  *
  * @since 1.0.0
  * @category Math

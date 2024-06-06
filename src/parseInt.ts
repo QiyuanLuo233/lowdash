@@ -7,11 +7,10 @@ const reTrimStart = /^\s+/;
 const nativeParseInt = root.parseInt;
 
 /**
- * Converts `string` to an integer of the specified radix. If `radix` is
- * `undefined` or `0`, a `radix` of `10` is used unless `string` is a
- * hexadecimal, in which case a `radix` of `16` is used.
+ * 转换string字符串为指定基数的整数。 如果基数是 undefined 或者 0，
+ * 则radix基数默认是10，如果string字符串是16进制，则radix基数为 16。
  *
- * **Note:** This method aligns with the
+ * **Note:** 这个方法与ES5 implementation 的 parseInt是一样的。
  * [ES5 implementation](https://es5.github.io/#x15.1.2.2) of `parseInt`.
  *
  * @since 1.0.0

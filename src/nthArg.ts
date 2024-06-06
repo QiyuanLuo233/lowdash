@@ -1,8 +1,7 @@
 import nth from './nth.js';
 
 /**
- * Creates a function that gets the argument at index `n`. If `n` is negative,
- * the nth argument from the end is returned.
+ *创建一个函数，这个函数返回第 n 个参数。如果 n为负数，则返回从结尾开始的第n个参数。
  *
  * @since 1.0.0
  * @category Util
@@ -18,7 +17,7 @@ import nth from './nth.js';
  * func('a', 'b', 'c', 'd')
  * // => 'c'
  */
-function nthArg(n) {
+function nthArg(n:number) {
     return (...args) => nth(args, n);
 }
 
