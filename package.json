@@ -1,5 +1,5 @@
 {
-  "name": "lowdas",
+  "name": "lowdash",
   "version": "0.0.1",
   "description": "A modern JavaScript/Typescript utility library",
   "main": "./dist/low.es.js",

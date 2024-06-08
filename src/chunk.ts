@@ -6,11 +6,11 @@
  *  @version 1.0.0
 */
 export const chunk = function (array:any [], size:number = 1):any []{
-    let newArr = []
+    let newArr:any [] = []
     let length = array.length;
     let arrSize = Math.floor(length / size);
     for (let i = 0; i < arrSize; i++) {
-        let temp = [];
+        let temp:any [] = [];
         for (let j = 0; j < size; j++) {
             temp.push(array[i * size + j]);
         }
