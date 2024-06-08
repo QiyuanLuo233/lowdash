@@ -1,12 +1,10 @@
 import baseSet from './.internal/baseSet.js';
 
 /**
- * Sets the value at `path` of `object`. If a portion of `path` doesn't exist,
- * it's created. Arrays are created for missing index properties while objects
- * are created for all other missing properties. Use `setWith` to customize
- * `path` creation.
+ * 设置 object对象中对应 path 属性路径上的值，如果path不存在，
+ * 则创建。 缺少的索引属性会创建为数组，而缺少的属性会创建为对象。 使用_.setWith 定制path创建。
  *
- * **Note:** This method mutates `object`.
+ * **Note:** 这个方法会改变 object。
  *
  * @since 1.0.0
  * @category Object
@@ -27,7 +25,7 @@ import baseSet from './.internal/baseSet.js';
  * console.log(object.x[0].y.z)
  * // => 5
  */
-function set(object, path, value) {
+function set(object, path, value):any {
     return object == null ? object : baseSet(object, path, value);
 }
 

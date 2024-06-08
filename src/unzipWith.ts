@@ -2,9 +2,8 @@ import map from './map.js';
 import unzip from './unzip.js';
 
 /**
- * This method is like `unzip` except that it accepts `iteratee` to specify
- * how regrouped values should be combined. The iteratee is invoked with the
- * elements of each group: (...group).
+ * 此方法类似于_.unzip，除了它接受一个iteratee指定重组值应该如何被组合。
+ * iteratee 调用时会传入每个分组的值： (...group)。
  *
  * @since 1.0.0
  * @category Array
@@ -20,7 +19,7 @@ import unzip from './unzip.js';
  * unzipWith(zipped, add)
  * // => [3, 30, 300]
  */
-function unzipWith(array, iteratee) {
+function unzipWith(array:any [], iteratee):any [] {
     if (!(array != null && array.length)) {
         return [];
     }

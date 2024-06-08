@@ -1,9 +1,8 @@
 import baseSortedIndex from './.internal/baseSortedIndex.js';
 
 /**
- * This method is like `sortedIndex` except that it returns the highest
- * index at which `value` should be inserted into `array` in order to
- * maintain its sort order.
+ * 此方法类似于_.sortedIndex，除了 
+ * 它返回 value值 在 array 中尽可能大的索引位置（index）。
  *
  * @since 1.0.0
  * @category Array
@@ -16,7 +15,7 @@ import baseSortedIndex from './.internal/baseSortedIndex.js';
  * sortedLastIndex([4, 5, 5, 5, 6], 5)
  * // => 4
  */
-function sortedLastIndex(array, value) {
+function sortedLastIndex(array:any [], value):number {
     return baseSortedIndex(array, value, true);
 }
 

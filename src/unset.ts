@@ -1,9 +1,9 @@
 import baseUnset from './.internal/baseUnset.js';
 
 /**
- * Removes the property at `path` of `object`.
+ * 移除object对象 path 路径上的属性。
  *
- * **Note:** This method mutates `object`.
+ * **Note:**  这个方法会改变源对象 object。
  *
  * @since 1.0.0
  * @category Object
@@ -26,7 +26,7 @@ import baseUnset from './.internal/baseUnset.js';
  * console.log(object)
  * // => { 'a': [{ 'b': {} }] }
  */
-function unset(object, path) {
+function unset(object, path):boolean {
     return object == null ? true : baseUnset(object, path);
 }
 

@@ -5,7 +5,7 @@ const INFINITY = 1 / 0;
 const MAX_INTEGER = 1.7976931348623157e308;
 
 /**
- * Converts `value` to a finite number.
+ * 转换 value 为一个有限数字。
  *
  * @since 1.0.0
  * @category Lang
@@ -25,7 +25,7 @@ const MAX_INTEGER = 1.7976931348623157e308;
  * toFinite('3.2')
  * // => 3.2
  */
-function toFinite(value) {
+function toFinite(value):number {
     if (!value) {
         return value === 0 ? value : 0;
     }

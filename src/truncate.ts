@@ -15,9 +15,8 @@ const DEFAULT_TRUNC_OMISSION = '...';
 const reFlags = /\w*$/;
 
 /**
- * Truncates `string` if it's longer than the given maximum string length.
- * The last characters of the truncated string are replaced with the omission
- * string which defaults to "...".
+ * 截断string字符串，如果字符串超出了限定的最大值。
+ *  被截断的字符串后面会以 omission 代替，omission 默认是 "..."。
  *
  * @since 1.0.0
  * @category String
@@ -50,7 +49,12 @@ const reFlags = /\w*$/;
  * })
  * // => 'hi-diddly-ho there, neig [...]'
  */
-function truncate(string, options) {
+interface option {
+    length?: any;
+    omission?: string;
+    separation?: string;
+}
+function truncate(string, options:option) {
     let separator;
     let length = DEFAULT_TRUNC_LENGTH;
     let omission = DEFAULT_TRUNC_OMISSION;

@@ -4,10 +4,8 @@ import isArrayLikeObject from './isArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `union` except that it accepts `comparator` which
- * is invoked to compare elements of `arrays`. Result values are chosen from
- * the first array in which the value occurs. The comparator is invoked
- * with two arguments: (arrVal, othVal).
+ * 这个方法类似_.union， 除了它接受一个 comparator 调用比较arrays数组的每一个元素。
+ *  comparator 调用时会传入2个参数： (arrVal, othVal)。
  *
  * @since 1.0.0
  * @category Array
@@ -23,7 +21,7 @@ import last from './last.js';
  * unionWith(objects, others, isEqual)
  * // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
  */
-function unionWith(...arrays) {
+function unionWith(...arrays):any [] {
     let comparator = last(arrays);
     comparator = typeof comparator === 'function' ? comparator : undefined;
     return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), undefined, comparator);

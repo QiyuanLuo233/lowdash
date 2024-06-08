@@ -5,7 +5,7 @@ import stringToArray from './.internal/stringToArray.js';
 const methodName = ''.trimLeft ? 'trimLeft' : 'trimStart';
 
 /**
- * Removes leading whitespace or specified characters from `string`.
+ * 从string字符串中移除前面的 空格 或 指定的字符。
  *
  * @since 1.0.0
  * @category String

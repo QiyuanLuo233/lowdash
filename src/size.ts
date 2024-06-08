@@ -8,8 +8,8 @@ const mapTag = '[object Map]';
 const setTag = '[object Set]';
 
 /**
- * Gets the size of `collection` by returning its length for array-like
- * values or the number of own enumerable string keyed properties for objects.
+ * 返回collection（集合）的长度，如果集合是类数组或字符串，
+ * 返回其 length ；如果集合是对象，返回其可枚举属性的个数。
  *
  * @since 1.0.0
  * @category Collection
@@ -26,7 +26,7 @@ const setTag = '[object Set]';
  * size('pebbles')
  * // => 7
  */
-function size(collection) {
+function size(collection):number {
     if (collection == null) {
         return 0;
     }

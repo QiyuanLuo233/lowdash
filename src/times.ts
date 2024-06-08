@@ -5,8 +5,8 @@ const MAX_SAFE_INTEGER = 9007199254740991;
 const MAX_ARRAY_LENGTH = 4294967295;
 
 /**
- * Invokes the iteratee `n` times, returning an array of the results of
- * each invocation. The iteratee is invoked with one argument: (index).
+ * 调用 iteratee n 次，每次调用返回的结果存入到数组中。
+ *  iteratee 调用入1个参数： (index)。
  *
  * @since 1.0.0
  * @category Util
@@ -21,7 +21,7 @@ const MAX_ARRAY_LENGTH = 4294967295;
  *  times(4, () => 0)
  * // => [0, 0, 0, 0]
  */
-function times(n, iteratee) {
+function times(n:number, iteratee):any [] {
     if (n < 1 || n > MAX_SAFE_INTEGER) {
         return [];
     }

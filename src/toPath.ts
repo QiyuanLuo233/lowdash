@@ -5,7 +5,7 @@ import stringToPath from './.internal/stringToPath.js';
 import toKey from './.internal/toKey.js';
 
 /**
- * Converts `value` to a property path array.
+ * 转换value为一个路径数组
  *
  * @since 1.0.0
  * @category Util
@@ -19,7 +19,7 @@ import toKey from './.internal/toKey.js';
  * toPath('a[0].b.c')
  * // => ['a', '0', 'b', 'c']
  */
-function toPath(value) {
+function toPath(value):any [] {
     if (Array.isArray(value)) {
         return map(value, toKey);
     }

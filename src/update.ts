@@ -1,9 +1,8 @@
 import baseUpdate from './.internal/baseUpdate.js';
 
 /**
- * This method is like `set` except that it accepts `updater` to produce the
- * value to set. Use `updateWith` to customize `path` creation. The `updater`
- * is invoked with one argument: (value).
+ * 该方法类似_.set，除了接受updater以生成要设置的值。
+ * 使用_.updateWith来自定义生成的新path。updater调用1个参数：(value)。
  *
  * **Note:** This method mutates `object`.
  *

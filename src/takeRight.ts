@@ -1,7 +1,7 @@
 import slice from './slice.js';
 
 /**
- * Creates a slice of `array` with `n` elements taken from the end.
+ * 创建一个数组切片，从array数组的最后一个元素开始提取n个元素。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +22,7 @@ import slice from './slice.js';
  * takeRight([1, 2, 3], 0)
  * // => []
  */
-function takeRight(array, n = 1) {
+function takeRight(array:any [], n:number = 1):any [] {
     const length = array == null ? 0 : array.length;
     if (!length) {
         return [];

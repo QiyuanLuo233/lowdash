@@ -1,5 +1,5 @@
 /**
- * Checks if `string` starts with the given target string.
+ * 检查字符串string是否以 target 开头。
  *
  * @since 1.0.0
  * @category String
@@ -20,7 +20,7 @@
  * startsWith('abc', 'b', 1)
  * // => true
  */
-function startsWith(string, target, position) {
+function startsWith(string:string, target:string, position:number = 0):boolean {
     const { length } = string;
     position = position == null ? 0 : position;
     if (position < 0) {

@@ -17,14 +17,14 @@ const LARGE_ARRAY_SIZE = 200
  * @param {Function} [comparator] The comparator invoked per element.
  * @returns {Array} Returns the new duplicate free array.
  */
-function baseUniq(array, iteratee, comparator) {
+function baseUniq(array, iteratee?:any, comparator?:any) {
   let index = -1
-  let includes = arrayIncludes
+  let includes:any = arrayIncludes
   let isCommon = true
 
   const { length } = array
-  const result = []
-  let seen = result
+  const result:any [] = []
+  let seen:any = result
 
   if (comparator) {
     isCommon = false

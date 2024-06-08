@@ -1,7 +1,5 @@
 /**
- * Checks if `predicate` returns truthy for **any** element of `array`.
- * Iteration is stopped once `predicate` returns truthy. The predicate is
- * invoked with three arguments: (value, index, array).
+ * 检查数组中是否有符合条件的项，如果有，立即终止执行并返回true
  *
  * @since 1.0.0
  * @category Array
@@ -14,7 +12,7 @@
  * some([null, 0, 'yes', false], Boolean)
  * // => true
  */
-function some(array, predicate) {
+function some(array:any [], predicate):boolean {
     let index = -1;
     const length = array == null ? 0 : array.length;
 

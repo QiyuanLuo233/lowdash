@@ -2,28 +2,17 @@ import debounce from './debounce.js';
 import isObject from './isObject.js';
 
 /**
- * Creates a throttled function that only invokes `func` at most once per
- * every `wait` milliseconds (or once per browser frame). The throttled function
- * comes with a `cancel` method to cancel delayed `func` invocations and a
- * `flush` method to immediately invoke them. Provide `options` to indicate
- * whether `func` should be invoked on the leading and/or trailing edge of the
- * `wait` timeout. The `func` is invoked with the last arguments provided to the
- * throttled function. Subsequent calls to the throttled function return the
- * result of the last `func` invocation.
+ * 创建一个节流函数，在 wait 秒内最多执行 func 一次的函数。
+ *  该函数提供一个 cancel 方法取消延迟的函数调用以及 flush 方法立即调用。
+ *  可以提供一个 options 对象决定如何调用 func 方法， 
+ * options.leading 与|或 options.trailing 决定 wait 前后如何触发。
+ *  func 会传入最后一次传入的参数给这个函数。 随后调用的函数返回是最后一次 func 调用的结果。
  *
- * **Note:** If `leading` and `trailing` options are `true`, `func` is
- * invoked on the trailing edge of the timeout only if the throttled function
- * is invoked more than once during the `wait` timeout.
- *
- * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
- * until the next tick, similar to `setTimeout` with a timeout of `0`.
- *
- * If `wait` is omitted in an environment with `requestAnimationFrame`, `func`
- * invocation will be deferred until the next frame is drawn (typically about
- * 16ms).
- *
- * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
- * for details over the differences between `throttle` and `debounce`.
+ * **Note:** 如果 leading 和 trailing 都设定为 true
+ *  则 func 允许 trailing 方式调用的条件为: 在 wait 期间多次调用。
+ * 如果 wait 为 0 并且 leading 为 false, func调用将被推迟到下一个点，类似setTimeout为0的超时
+ * 查看David Corbacho's article 了解_.throttle 与_.debounce 的区别。
+ * [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
  *
  * @since 1.0.0
  * @category Function
@@ -49,7 +38,7 @@ import isObject from './isObject.js';
  * // Cancel the trailing throttled invocation.
  * jQuery(window).on('popstate', throttled.cancel)
  */
-function throttle(func, wait, options) {
+function throttle(func, wait:number, options) {
     let leading = true;
     let trailing = true;
 

@@ -1,8 +1,7 @@
 import baseSortedUniq from './.internal/baseSortedUniq.js';
 
 /**
- * This method is like `uniqBy` except that it's designed and optimized
- * for sorted arrays.
+ * 这个方法类似_.uniqBy，除了它会优化排序数组。
  *
  * @since 1.0.0
  * @category Array
@@ -14,7 +13,7 @@ import baseSortedUniq from './.internal/baseSortedUniq.js';
  * sortedUniqBy([1.1, 1.2, 2.3, 2.4], Math.floor)
  * // => [1.1, 2.3]
  */
-function sortedUniqBy(array, iteratee) {
+function sortedUniqBy(array:any [], iteratee):any [] {
     return array != null && array.length ? baseSortedUniq(array, iteratee) : [];
 }
 

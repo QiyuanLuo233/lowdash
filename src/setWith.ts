@@ -1,12 +1,11 @@
 import baseSet from './.internal/baseSet.js';
 
 /**
- * This method is like `set` except that it accepts `customizer` which is
- * invoked to produce the objects of `path`. If `customizer` returns `undefined`
- * path creation is handled by the method instead. The `customizer` is invoked
- * with three arguments: (nsValue, key, nsObject).
+ * 这个方法类似_.set，除了它接受一个 customizer，调用生成对象的 path。
+ *  如果 customizer 返回 undefined 将会有它的处理方法代替。
+ *  customizer 调用3个参数： (nsValue, key, nsObject)。
  *
- * **Note:** This method mutates `object`.
+ * **Note:** 这个方法会改变 object。
  *
  * @since 1.0.0
  * @category Object

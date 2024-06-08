@@ -4,8 +4,8 @@ import isSymbol from './isSymbol.js';
 const INFINITY = 1 / 0;
 
 /**
- * Converts `value` to a string. An empty string is returned for `null`
- * and `undefined` values. The sign of `-0` is preserved.
+ * 转换 value 为字符串。 null 和 undefined 将返回空字符串。
+ * -0 将被转换为字符串"-0"。
  *
  * @since 1.0.0
  * @category Lang
@@ -22,7 +22,7 @@ const INFINITY = 1 / 0;
  * toString([1, 2, 3])
  * // => '1,2,3'
  */
-function toString(value) {
+function toString(value):string {
     if (value == null) {
         return '';
     }

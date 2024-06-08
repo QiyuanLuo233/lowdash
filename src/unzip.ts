@@ -8,7 +8,7 @@ import isArrayLikeObject from './isArrayLikeObject.js';
  * elements and creates an array regrouping the elements to their pre-zip
  * configuration.
  *
- * @since 1.2.0
+ * @since 1.0.0
  * @category Array
  * @param {Array} array The array of grouped elements to process.
  * @returns {Array} Returns the new array of regrouped elements.

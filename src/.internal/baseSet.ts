@@ -14,7 +14,7 @@ import toKey from './toKey.js'
  * @param {Function} [customizer] The function to customize path creation.
  * @returns {Object} Returns `object`.
  */
-function baseSet(object, path, value, customizer) {
+function baseSet(object, path, value, customizer?:any) {
   if (!isObject(object)) {
     return object
   }

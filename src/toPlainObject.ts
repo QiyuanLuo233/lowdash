@@ -1,6 +1,5 @@
 /**
- * Converts `value` to a plain object flattening inherited enumerable string
- * keyed properties of `value` to own properties of the plain object.
+ * 转换 value 为普通对象。 包括继承的可枚举属性。
  *
  * @since 1.0.0
  * @category Lang

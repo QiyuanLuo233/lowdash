@@ -2,7 +2,7 @@ import upperFirst from './upperFirst.js';
 import words from './words.js';
 
 /**
- * Converts `string` to
+ * 转换 string 字符串为start case.
  * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
  *
  * @since 1.0.0
@@ -21,7 +21,7 @@ import words from './words.js';
  * startCase('__FOO_BAR__')
  * // => 'FOO BAR'
  */
-const startCase = (string) =>
+const startCase = (string:string):string =>
     words(`${string}`.replace(/['\u2019]/g, '')).reduce(
         (result, word, index) => result + (index ? ' ' : '') + upperFirst(word),
         '',

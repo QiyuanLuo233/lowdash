@@ -16,7 +16,7 @@ const setTag = '[object Set]';
 const symIterator = Symbol.iterator;
 
 /**
- * Converts `value` to an array.
+ * 转换 value 为一个数组。
  *
  * @since 1.0.0
  * @category Lang
@@ -36,7 +36,7 @@ const symIterator = Symbol.iterator;
  * toArray(null)
  * // => []
  */
-function toArray(value) {
+function toArray(value):any [] {
     if (!value) {
         return [];
     }

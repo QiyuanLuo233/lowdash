@@ -1,9 +1,8 @@
 import unzipWith from './unzipWith.js';
 
 /**
- * This method is like `zip` except that it accepts `iteratee` to specify
- * how grouped values should be combined. The iteratee is invoked with the
- * elements of each group: (...group).
+ * 这个方法类似于_.zip，不同之处在于它接受一个 iteratee（迭代函数），
+ * 来 指定分组的值应该如何被组合。 该iteratee调用每个组的元素： (...group).
  *
  * @since 1.0.0
  * @category Array

@@ -4,11 +4,8 @@ import isArrayLikeObject from './isArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `union` except that it accepts `iteratee` which is
- * invoked for each element of each `arrays` to generate the criterion by
- * which uniqueness is computed. Result values are chosen from the first
- * array in which the value occurs. The iteratee is invoked with one argument:
- * (value).
+ * 这个方法类似_.union ，除了它接受一个 iteratee （迭代函数），
+ * 调用每一个数组（array）的每个元素以产生唯一性计算的标准。iteratee 会传入一个参数：(value)。
  *
  * @since 1.0.0
  * @category Array
@@ -21,7 +18,7 @@ import last from './last.js';
  * unionBy([2.1], [1.2, 2.3], Math.floor)
  * // => [2.1, 1.2]
  */
-function unionBy(...arrays) {
+function unionBy(...arrays:any []):any [] {
     let iteratee = last(arrays);
     if (isArrayLikeObject(iteratee)) {
         iteratee = undefined;

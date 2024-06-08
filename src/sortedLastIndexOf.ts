@@ -2,8 +2,7 @@ import baseSortedIndex from './.internal/baseSortedIndex.js';
 import eq from './eq.js';
 
 /**
- * This method is like `lastIndexOf` except that it performs a binary
- * search on a sorted `array`.
+ * 这个方法类似_.lastIndexOf，除了它是在已经排序的数组array上执行二进制检索。
  *
  * @since 1.0.0
  * @category Array
@@ -15,7 +14,7 @@ import eq from './eq.js';
  * sortedLastIndexOf([4, 5, 5, 5, 6], 5)
  * // => 3
  */
-function sortedLastIndexOf(array, value) {
+function sortedLastIndexOf(array:any [], value):number {
     const length = array == null ? 0 : array.length;
     if (length) {
         const index = baseSortedIndex(array, value, true) - 1;

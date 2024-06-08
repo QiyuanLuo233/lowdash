@@ -1,7 +1,7 @@
 import createMathOperation from './.internal/createMathOperation.js';
 
 /**
- * Subtract two numbers.
+ * 两数相减
  *
  * @since 1.0.0
  * @category Math
@@ -13,6 +13,6 @@ import createMathOperation from './.internal/createMathOperation.js';
  * subtract(6, 4)
  * // => 2
  */
-const subtract = createMathOperation((minuend, subtrahend) => minuend - subtrahend, 0);
+const subtract = createMathOperation((minuend:number, subtrahend:number):number => minuend - subtrahend, 0);
 
 export default subtract;

@@ -20,7 +20,7 @@ const reIsOctal = /^0o[0-7]+$/i;
 const freeParseInt = parseInt;
 
 /**
- * Converts `value` to a number.
+ * 转换value为一个数字
  *
  * @since 1.0.0
  * @category Lang
@@ -41,7 +41,7 @@ const freeParseInt = parseInt;
  * toNumber('3.2')
  * // => 3.2
  */
-function toNumber(value) {
+function toNumber(value):number {
     if (typeof value === 'number') {
         return value;
     }

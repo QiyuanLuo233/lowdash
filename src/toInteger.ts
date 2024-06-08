@@ -1,9 +1,9 @@
 import toFinite from './toFinite.js';
 
 /**
- * Converts `value` to an integer.
+ * 转换 value 为一个整数。
  *
- * **Note:** This method is loosely based on
+ * **Note:** 这个方法基于
  * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
  *
  * @since 1.0.0
@@ -25,7 +25,7 @@ import toFinite from './toFinite.js';
  * toInteger('3.2')
  * // => 3
  */
-function toInteger(value) {
+function toInteger(value):number {
     const result = toFinite(value);
     const remainder = result % 1;
 

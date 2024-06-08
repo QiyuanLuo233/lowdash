@@ -2,7 +2,7 @@
 const idCounter = {};
 
 /**
- * Generates a unique ID. If `prefix` is given, the ID is appended to it.
+ * 生成唯一ID。 如果提供了 prefix ，会被添加到ID前缀上。
  *
  * @since 1.0.0
  * @category Util
@@ -17,13 +17,13 @@ const idCounter = {};
  * uniqueId()
  * // => '105'
  */
-function uniqueId(prefix = '$lodash$') {
+function uniqueId(prefix= '$lowdash$'):string {
     if (!idCounter[prefix]) {
         idCounter[prefix] = 0;
     }
 
     const id = ++idCounter[prefix];
-    if (prefix === '$lodash$') {
+    if (prefix === '$lowdash$') {
         return `${id}`;
     }
 

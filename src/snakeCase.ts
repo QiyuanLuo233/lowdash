@@ -2,7 +2,7 @@ import words from './words.js';
 import toString from './toString.js';
 
 /**
- * Converts `string` to
+ * 转换字符串string为
  * [snake case](https://en.wikipedia.org/wiki/Snake_case).
  *
  * @since 1.0.0
@@ -24,7 +24,7 @@ import toString from './toString.js';
  * snakeCase('foo2bar')
  * // => 'foo_2_bar'
  */
-const snakeCase = (string) =>
+const snakeCase = (string:string) =>
     words(toString(string).replace(/['\u2019]/g, '')).reduce(
         (result, word, index) => result + (index ? '_' : '') + word.toLowerCase(),
         '',

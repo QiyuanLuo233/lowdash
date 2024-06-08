@@ -4,10 +4,9 @@ import toInteger from './toInteger.js';
 const MAX_ARRAY_LENGTH = 4294967295;
 
 /**
- * Converts `value` to an integer suitable for use as the length of an
- * array-like object.
+ * 转换 value 为用作类数组对象的长度整数。
  *
- * **Note:** This method is based on
+ * **Note:** 这个方法基于
  * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
  *
  * @since 1.0.0
@@ -28,7 +27,7 @@ const MAX_ARRAY_LENGTH = 4294967295;
  * toLength('3.2')
  * // => 3
  */
-function toLength(value) {
+function toLength(value):number {
     if (!value) {
         return 0;
     }

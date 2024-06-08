@@ -5,7 +5,7 @@ import stringToArray from './.internal/stringToArray.js';
 const methodName = ''.trimRight ? 'trimRight' : 'trimEnd';
 
 /**
- * Removes trailing whitespace or specified characters from `string`.
+ * 从string字符串中移除后面的 空格 或 指定的字符。
  *
  * @since 1.0.0
  * @category String
@@ -21,7 +21,7 @@ const methodName = ''.trimRight ? 'trimRight' : 'trimEnd';
  * trimEnd('-_-abc-_-', '_-')
  * // => '-_-abc'
  */
-function trimEnd(string, chars) {
+function trimEnd(string:string, chars):string {
     if (string && chars === undefined) {
         return string[methodName]();
     }

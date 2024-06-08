@@ -1,7 +1,7 @@
 import slice from './slice.js';
 
 /**
- * Creates a slice of `array` with `n` elements taken from the beginning.
+ * 创建一个数组切片，从array数组的起始元素开始提取n个元素。
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +22,7 @@ import slice from './slice.js';
  * take([1, 2, 3], 0)
  * // => []
  */
-function take(array, n = 1) {
+function take(array:any [], n:number = 1):any [] {
     if (!(array != null && array.length)) {
         return [];
     }

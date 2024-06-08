@@ -1,11 +1,9 @@
 import baseUniq from './.internal/baseUniq.js';
 
 /**
- * Creates a duplicate-free version of an array, using
+ * 创建一个去重后的array数组副本。使用了SameValueZero 做等值比较。只有第一次出现的元素才会被保留。
  * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * for equality comparisons, in which only the first occurrence of each element
- * is kept. The order of result values is determined by the order they occur
- * in the array.
+
  *
  * @since 1.0.0
  * @category Array
@@ -17,7 +15,7 @@ import baseUniq from './.internal/baseUniq.js';
  * uniq([2, 1, 2])
  * // => [2, 1]
  */
-function uniq(array) {
+function uniq(array:any []):any [] {
     return array != null && array.length ? baseUniq(array) : [];
 }
 

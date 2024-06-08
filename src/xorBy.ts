@@ -3,11 +3,9 @@ import isArrayLikeObject from './isArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `xor` except that it accepts `iteratee` which is
- * invoked for each element of each `arrays` to generate the criterion by
- * which they're compared. The order of result values is determined
- * by the order they occur in the arrays. The iteratee is invoked with one
- * argument: (value).
+ * 这个方法类似_.xor ，除了它接受 iteratee（迭代器），这个迭代器 
+ * 调用每一个 arrays（数组）的每一个值，以生成比较的新值。
+ * iteratee 调用一个参数：(value).
  *
  * @since 1.0.0
  * @category Array
@@ -20,7 +18,7 @@ import last from './last.js';
  * xorBy([2.1, 1.2], [2.3, 3.4], Math.floor)
  * // => [1.2, 3.4]
  */
-function xorBy(...arrays) {
+function xorBy(...arrays):any [] {
     let iteratee = last(arrays);
     if (isArrayLikeObject(iteratee)) {
         iteratee = undefined;

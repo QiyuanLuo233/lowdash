@@ -1,9 +1,8 @@
 import baseSortedIndexBy from './.internal/baseSortedIndexBy.js';
 
 /**
- * This method is like `sortedIndex` except that it accepts `iteratee`
- * which is invoked for `value` and each element of `array` to compute their
- * sort ranking. The iteratee is invoked with one argument: (value).
+ * 这个方法类似_.sortedIndex ，除了它接受一个 iteratee （迭代函数），
+ * 调用每一个数组（array）元素，返回结果和value 值比较来计算排序。iteratee 会传入一个参数：(value)。
  *
  * @since 1.0.0
  * @category Array
@@ -19,7 +18,7 @@ import baseSortedIndexBy from './.internal/baseSortedIndexBy.js';
  * sortedIndexBy(objects, { 'n': 4 }, ({ n }) => n)
  * // => 0
  */
-function sortedIndexBy(array, value, iteratee) {
+function sortedIndexBy(array:any [], value, iteratee):number {
     return baseSortedIndexBy(array, value, iteratee);
 }
 

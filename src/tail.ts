@@ -1,5 +1,5 @@
 /**
- * Gets all but the first element of `array`.
+ * 获取除了array数组第一个元素以外的全部元素
  *
  * @since 1.0.0
  * @category Array
@@ -10,7 +10,7 @@
  * tail([1, 2, 3])
  * // => [2, 3]
  */
-function tail(array) {
+function tail(array:any []):any [] {
     const length = array == null ? 0 : array.length;
     if (!length) {
         return [];

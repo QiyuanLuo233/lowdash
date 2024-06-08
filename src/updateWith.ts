@@ -1,12 +1,11 @@
 import baseUpdate from './.internal/baseUpdate.js';
 
 /**
- * This method is like `update` except that it accepts `customizer` which is
- * invoked to produce the objects of `path`. If `customizer` returns `undefined`
- * path creation is handled by the method instead. The `customizer` is invoked
- * with three arguments: (nsValue, key, nsObject).
+ * 该方法类似_.update，不同之处在于它接受customizer，
+ * 调用来生成新的对象的path。如果customizer返回undefined，路径创建由该方法代替。
+ * customizer调用有三个参数：(nsValue, key, nsObject) 。
  *
- * **Note:** This method mutates `object`.
+ * **Note:** 这个方法会改变源对象 object。
  *
  * @since 1.0.0
  * @category Object

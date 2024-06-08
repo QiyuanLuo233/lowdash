@@ -5,15 +5,12 @@ import isObject from './isObject.js';
 import isTypedArray from './isTypedArray.js';
 
 /**
- * An alternative to `reduce` this method transforms `object` to a new
- * `accumulator` object which is the result of running each of its own
- * enumerable string keyed properties thru `iteratee`, with each invocation
- * potentially mutating the `accumulator` object. If `accumulator` is not
- * provided, a new object with the same `[[Prototype]]` will be used. The
- * iteratee is invoked with four arguments: (accumulator, value, key, object).
- * Iteratee functions may exit iteration early by explicitly returning `false`.
+ * _.reduce的替代方法;此方法将转换object对象为一个新的accumulator对象，
+ * 结果来自iteratee处理自身可枚举的属性。 每次调用可能会改变 accumulator 对象。
+ * 如果不提供accumulator，将使用与[[Prototype]]相同的新对象。
+ * iteratee调用4个参数：(accumulator, value, key, object)。如果返回 false，iteratee 会提前退出。
  *
- * @since 1.3.0
+ * @since 1.0.0
  * @category Object
  * @param {Object} object The object to iterate over.
  * @param {Function} iteratee The function invoked per iteration.

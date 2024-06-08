@@ -2,8 +2,7 @@ import copyArray from './.internal/copyArray.js';
 import slice from './slice.js';
 
 /**
- * Gets `n` random elements at unique keys from `array` up to the
- * size of `array`.
+ * 从collection（集合）中获得n个随机元素。
  *
  * @since 1.0.0
  * @category Array
@@ -18,7 +17,7 @@ import slice from './slice.js';
  * sampleSize([1, 2, 3], 4)
  * // => [2, 3, 1]
  */
-function sampleSize(array, n) {
+function sampleSize(array, n:number):any {
     n = n == null ? 1 : n;
     const length = array == null ? 0 : array.length;
     if (!length || n < 1) {

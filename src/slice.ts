@@ -1,9 +1,8 @@
 /**
- * Creates a slice of `array` from `start` up to, but not including, `end`.
+ * 裁剪数组array，从 start 位置开始到end结束，但不包括 end 本身的位置。
  *
- * **Note:** This method is used instead of
- * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
- * returned.
+ * **Note:** 这个方法用于代替Array#slice 来确保数组正确返回。
+ * [`Array#slice`](https://mdn.io/Array/slice)
  *
  * @since 1.0.0
  * @category Array
@@ -18,7 +17,7 @@
  * _.slice(array, 2)
  * // => [3, 4]
  */
-function slice(array, start, end) {
+function slice(array:any [], start:number = 0, end:number):any [] {
     let length = array == null ? 0 : array.length;
     if (!length) {
         return [];

@@ -1,10 +1,7 @@
 import baseSortedUniq from './.internal/baseSortedUniq.js';
 
 /**
- * This method is like `uniq` except that it only works
- * for sorted arrays.
- * If the input array is known to be sorted `sortedUniq` is
- * faster than `uniq`.
+ * 这个方法类似_.uniq，除了它会优化排序数组。
  *
  * @since 1.0.0
  * @category Array
@@ -15,7 +12,7 @@ import baseSortedUniq from './.internal/baseSortedUniq.js';
  * sortedUniq([1, 1, 2])
  * // => [1, 2]
  */
-function sortedUniq(array) {
+function sortedUniq(array:any []):any [] {
     return array != null && array.length ? baseSortedUniq(array) : [];
 }
 

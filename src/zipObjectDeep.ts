@@ -2,7 +2,7 @@ import baseSet from './.internal/baseSet.js';
 import baseZipObject from './.internal/baseZipObject.js';
 
 /**
- * This method is like `zipObject` except that it supports property paths.
+ * 这个方法类似_.zipObject，除了它支持属性路径。
  *
  * @since 1.0.0
  * @category Array

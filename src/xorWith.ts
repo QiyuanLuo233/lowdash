@@ -3,10 +3,8 @@ import isArrayLikeObject from './isArrayLikeObject.js';
 import last from './last.js';
 
 /**
- * This method is like `xor` except that it accepts `comparator` which is
- * invoked to compare elements of `arrays`. The order of result values is
- * determined by the order they occur in the arrays. The comparator is invoked
- * with two arguments: (arrVal, othVal).
+ * 该方法是像_.xor，除了它接受一个 comparator ，
+ * 以调用比较数组的元素。 comparator 调用2个参数：(arrVal, othVal).
  *
  * @since 1.0.0
  * @category Array
@@ -22,7 +20,7 @@ import last from './last.js';
  * xorWith(objects, others, isEqual)
  * // => [{ 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
  */
-function xorWith(...arrays) {
+function xorWith(...arrays):any [] {
     let comparator = last(arrays);
     comparator = typeof comparator === 'function' ? comparator : undefined;
     return baseXor(arrays.filter(isArrayLikeObject), undefined, comparator);

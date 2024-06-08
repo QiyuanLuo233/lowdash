@@ -4,7 +4,7 @@ import charsStartIndex from './.internal/charsStartIndex.js';
 import stringToArray from './.internal/stringToArray.js';
 
 /**
- * Removes leading and trailing whitespace or specified characters from `string`.
+ * 从string字符串中移除前面和后面的 空格 或 指定的字符。
  *
  * @since 1.0.0
  * @category String
@@ -20,7 +20,7 @@ import stringToArray from './.internal/stringToArray.js';
  * trim('-_-abc-_-', '_-')
  * // => 'abc'
  */
-function trim(string: string, chars: string) {
+function trim(string: string, chars: string):string {
     if (string && chars === undefined) {
         return string.trim();
     }

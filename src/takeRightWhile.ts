@@ -1,9 +1,8 @@
 import baseWhile from './.internal/baseWhile.js';
 
 /**
- * Creates a slice of `array` with elements taken from the end. Elements are
- * taken until `predicate` returns falsey. The predicate is invoked with
- * three arguments: (value, index, array).
+ * 从array数组的最后一个元素开始提取元素，
+ * 直到 predicate 返回假值。predicate 会传入三个参数： (value, index, array)。
  *
  * @since 1.0.0
  * @category Array
@@ -21,7 +20,7 @@ import baseWhile from './.internal/baseWhile.js';
  * takeRightWhile(users, ({ active }) => active)
  * // => objects for ['fred', 'pebbles']
  */
-function takeRightWhile(array, predicate) {
+function takeRightWhile(array:any [], predicate):any [] {
     return array != null && array.length ? baseWhile(array, predicate, false, true) : [];
 }
 

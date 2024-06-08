@@ -1,7 +1,5 @@
 /**
- * Checks if `predicate` returns truthy for **any** element of `object`.
- * Iteration is stopped once `predicate` returns truthy. The predicate is
- * invoked with three arguments: (value, key, object).
+ * 检查对象中还否有元素值符合条件，如果有立即返回true并终止执行。
  *
  * @since 1.0.0
  * @category Object
@@ -14,7 +12,7 @@
  * someValues({ 'a': 0, 'b': 'yes', 'c': false }, Boolean)
  * // => true
  */
-function someValues(object, predicate) {
+function someValues(object, predicate):boolean {
     object = Object(object);
     const props = Object.keys(object);
 

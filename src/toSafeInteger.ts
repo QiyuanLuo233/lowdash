@@ -4,8 +4,7 @@ import toInteger from './toInteger.js';
 const MAX_SAFE_INTEGER = 9007199254740991;
 
 /**
- * Converts `value` to a safe integer. A safe integer can be compared and
- * represented correctly.
+ * 转换 value 为安全整数。 安全整数可以用于比较和准确的表示。
  *
  * @since 1.0.0
  * @category Lang
@@ -25,7 +24,7 @@ const MAX_SAFE_INTEGER = 9007199254740991;
  * toSafeInteger('3.2')
  * // => 3
  */
-function toSafeInteger(value) {
+function toSafeInteger(value):number {
     if (!value) {
         return value === 0 ? value : 0;
     }

@@ -2,7 +2,7 @@ import words from './words.js';
 import toString from './toString.js';
 
 /**
- * Converts `string`, as space separated words, to upper case.
+ * 转换字符串string为 空格 分隔的大写单词。
  *
  * @since 1.0.0
  * @category String
@@ -20,7 +20,7 @@ import toString from './toString.js';
  * upperCase('__foo_bar__')
  * // => 'FOO BAR'
  */
-const upperCase = (string) =>
+const upperCase = (string:string):string =>
     words(toString(string).replace(/['\u2019]/g, '')).reduce(
         (result, word, index) => result + (index ? ' ' : '') + word.toUpperCase(),
         '',

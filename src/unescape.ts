@@ -12,12 +12,10 @@ const reEscapedHtml = /&(?:amp|lt|gt|quot|#(0+)?39);/g;
 const reHasEscapedHtml = RegExp(reEscapedHtml.source);
 
 /**
- * The inverse of `escape`this method converts the HTML entities
- * `&amp;`, `&lt;`, `&gt;`, `&quot;` and `&#39;` in `string` to
- * their corresponding characters.
+ * _.escape的反向版。 这个方法转换string字符串中的 HTML 实体 &amp;, 
+ * &lt;, &gt;, &quot;, &#39;, 和 &#96; 为对应的字符。
  *
- * **Note:** No other HTML entities are unescaped. To unescape additional
- * HTML entities use a third-party library like [_he_](https://mths.be/he).
+ * **Note:** 不会转换其他的 HTML 实体，需要转换可以使用第三方库，类似[_he_](https://mths.be/he).
  *
  * @since 1.0.0
  * @category String
@@ -29,7 +27,7 @@ const reHasEscapedHtml = RegExp(reEscapedHtml.source);
  * unescape('fred, barney, &amp; pebbles')
  * // => 'fred, barney, & pebbles'
  */
-function unescape(string) {
+function unescape(string?:string):string {
     return string && reHasEscapedHtml.test(string)
         ? string.replace(reEscapedHtml, (entity) => htmlUnescapes[entity] || "'")
         : string || '';

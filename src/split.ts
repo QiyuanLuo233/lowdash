@@ -7,9 +7,9 @@ import stringToArray from './.internal/stringToArray.js';
 const MAX_ARRAY_LENGTH = 4294967295;
 
 /**
- * Splits `string` by `separator`.
+ * 根据separator 拆分字符串string。
  *
- * **Note:** This method is based on
+ * **Note:** 这个方法基于
  * [`String#split`](https://mdn.io/String/split).
  *
  * @since 1.0.0
@@ -23,7 +23,7 @@ const MAX_ARRAY_LENGTH = 4294967295;
  * split('a-b-c', '-', 2)
  * // => ['a', 'b']
  */
-function split(string, separator, limit) {
+function split(string:string, separator:RegExp|string, limit:number):any [] {
     limit = limit === undefined ? MAX_ARRAY_LENGTH : limit >>> 0;
     if (!limit) {
         return [];

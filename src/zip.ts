@@ -1,9 +1,8 @@
 import unzip from './unzip.js';
 
 /**
- * Creates an array of grouped elements, the first of which contains the
- * first elements of the given arrays, the second of which contains the
- * second elements of the given arrays, and so on.
+ * 创建一个分组元素的数组，数组的第一个元素包含所有给定数组的第一个元素，
+ * 数组的第二个元素包含所有给定数组的第二个元素，以此类推。
  *
  * @since 1.0.0
  * @category Array
@@ -15,7 +14,7 @@ import unzip from './unzip.js';
  * zip(['a', 'b'], [1, 2], [true, false])
  * // => [['a', 1, true], ['b', 2, false]]
  */
-function zip(...arrays) {
+function zip(...arrays:any []):any [] {
     return unzip(arrays);
 }
 

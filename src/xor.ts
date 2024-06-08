@@ -2,10 +2,10 @@ import baseXor from './.internal/baseXor.js';
 import isArrayLikeObject from './isArrayLikeObject.js';
 
 /**
- * Creates an array of unique values that is the
+ * 创建一个给定数组唯一值的数组，使用symmetric difference做等值比较。
+ * 返回值的顺序取决于他们数组的出现顺序。
  * [symmetric difference](https://en.wikipedia.org/wiki/Symmetric_difference)
- * of the given arrays. The order of result values is determined by the order
- * they occur in the arrays.
+ * 
  *
  * @since 1.0.0
  * @category Array
@@ -17,7 +17,7 @@ import isArrayLikeObject from './isArrayLikeObject.js';
  * xor([2, 1], [2, 3])
  * // => [1, 3]
  */
-function xor(...arrays) {
+function xor(...arrays):any [] {
     return baseXor(arrays.filter(isArrayLikeObject));
 }
 

@@ -8,13 +8,13 @@ import eq from '../eq.js'
  * @param {Function} [iteratee] The iteratee invoked per element.
  * @returns {Array} Returns the new duplicate free array.
  */
-function baseSortedUniq(array, iteratee) {
+function baseSortedUniq(array, iteratee?:any) {
   let seen
   let index = -1
   let resIndex = 0
 
   const { length } = array
-  const result = []
+  const result:any [] = []
 
   while (++index < length) {
     const value = array[index], computed = iteratee ? iteratee(value) : value

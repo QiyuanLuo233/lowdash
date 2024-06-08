@@ -1,10 +1,8 @@
 import baseUniq from './.internal/baseUniq.js';
 
 /**
- * This method is like `uniq` except that it accepts `comparator` which
- * is invoked to compare elements of `array`. The order of result values is
- * determined by the order they occur in the array. The comparator is invoked
- * with two arguments: (arrVal, othVal).
+ * 这个方法类似_.uniq， 除了它接受一个 comparator
+ *  调用比较arrays数组的每一个元素。 comparator 调用时会传入2个参数： (arrVal, othVal)。
  *
  * @since 1.0.0
  * @category Array
@@ -19,7 +17,7 @@ import baseUniq from './.internal/baseUniq.js';
  * uniqWith(objects, isEqual)
  * // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
  */
-function uniqWith(array, comparator) {
+function uniqWith(array:any [], comparator):any [] {
     comparator = typeof comparator === 'function' ? comparator : undefined;
     return array != null && array.length ? baseUniq(array, undefined, comparator) : [];
 }

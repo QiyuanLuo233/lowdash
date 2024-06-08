@@ -1,7 +1,7 @@
 import baseSum from './.internal/baseSum.js';
 
 /**
- * Computes the sum of the values in `array`.
+ * 数组各项之和
  *
  * @since 1.0.0
  * @category Math
@@ -12,7 +12,7 @@ import baseSum from './.internal/baseSum.js';
  * sum([4, 2, 8, 6])
  * // => 20
  */
-function sum(array) {
+function sum(array:any):number {
     return array != null && array.length ? baseSum(array, (value) => value) : 0;
 }
 

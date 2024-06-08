@@ -13,7 +13,7 @@ function asciiWords(string) {
 }
 
 /**
- * Splits `string` into an array of its words.
+ * 拆分字符串string中的词为数组 。
  *
  * @since 1.0.0
  * @category String
@@ -28,7 +28,7 @@ function asciiWords(string) {
  * words('fred, barney, & pebbles', /[^, ]+/g)
  * // => ['fred', 'barney', '&', 'pebbles']
  */
-function words(string:string, pattern:any = undefined) {
+function words(string:string, pattern:any = undefined):any [] {
     if (pattern === undefined) {
         const result = hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
         return result || [];
