@@ -52,7 +52,7 @@ const reFlags = /\w*$/;
 interface option {
     length?: any;
     omission?: string;
-    separation?: string;
+    separator?: string;
 }
 function truncate(string, options:option) {
     let separator;

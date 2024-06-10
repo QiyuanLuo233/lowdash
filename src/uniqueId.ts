@@ -17,13 +17,13 @@ const idCounter = {};
  * uniqueId()
  * // => '105'
  */
-function uniqueId(prefix= '$lowdash$'):string {
+function uniqueId(prefix= '$low-dash$'):string {
     if (!idCounter[prefix]) {
         idCounter[prefix] = 0;
     }
 
     const id = ++idCounter[prefix];
-    if (prefix === '$lowdash$') {
+    if (prefix === '$low-dash$') {
         return `${id}`;
     }
 

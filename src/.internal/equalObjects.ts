@@ -47,7 +47,7 @@ function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
   stack.set(other, object)
 
   let compared
-  let skipCtor = isPartial
+  let skipCtor:any = isPartial
   while (++index < objLength) {
     key = objProps[index]
     const objValue = object[key]

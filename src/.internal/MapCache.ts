@@ -9,7 +9,7 @@ import Hash from './Hash.js'
  * @param {string} key The reference key.
  * @returns {*} Returns the map data.
  */
-function getMapData({ __data__ }, key) {
+function getMapData({ __data__ }:any, key?:any) {
   const data = __data__
   return isKeyable(key)
     ? data[typeof key === 'string' ? 'string' : 'hash']
@@ -31,6 +31,8 @@ function isKeyable(value) {
 }
 
 class MapCache {
+  size: number
+  private __data__: { hash: Hash; map: Map<any, any>; string: Hash }
 
   /**
    * Creates a map cache object to store key-value pairs.
@@ -39,7 +41,7 @@ class MapCache {
    * @constructor
    * @param {Array} [entries] The key-value pairs to cache.
    */
-  constructor(entries) {
+  constructor(entries?:any) {
     let index = -1
     const length = entries == null ? 0 : entries.length
 

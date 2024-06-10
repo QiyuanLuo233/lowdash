@@ -2,6 +2,8 @@
 const HASH_UNDEFINED = '__lodash_hash_undefined__'
 
 class Hash {
+  private __data__: any
+  size: number
 
   /**
    * Creates a hash object.
@@ -10,7 +12,7 @@ class Hash {
    * @constructor
    * @param {Array} [entries] The key-value pairs to cache.
    */
-  constructor(entries) {
+  constructor(entries?:any) {
     let index = -1
     const length = entries == null ? 0 : entries.length
 

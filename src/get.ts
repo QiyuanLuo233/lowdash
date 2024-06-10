@@ -25,7 +25,7 @@ import baseGet from './.internal/baseGet.js';
  * get(object, 'a.b.c', 'default')
  * // => 'default'
  */
-function get(object, path, defaultValue) {
+function get(object, path, defaultValue?:any) {
     const result = object == null ? undefined : baseGet(object, path);
     return result === undefined ? defaultValue : result;
 }

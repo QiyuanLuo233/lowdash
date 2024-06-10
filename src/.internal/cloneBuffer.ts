@@ -4,7 +4,7 @@ import root from './root.js'
 const freeExports = typeof exports === 'object' && exports !== null && !exports.nodeType && exports
 
 /** Detect free variable `module`. */
-const freeModule = freeExports && typeof module === 'object' && module !== null && !module.nodeType && module
+const freeModule = freeExports && typeof module === 'object' && module !== null&& module
 
 /** Detect the popular CommonJS extension `module.exports`. */
 const moduleExports = freeModule && freeModule.exports === freeExports

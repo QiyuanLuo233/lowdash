@@ -8,7 +8,7 @@ export default [
     input: 'index.ts',
     plugins: [
       resolve(),
-      typescript(),
+      typescript({tsconfig:'./tsconfig.json'}),
       terser(),
     ],
     output: [

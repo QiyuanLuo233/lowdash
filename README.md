@@ -35,10 +35,10 @@ A modern JavaScript/Typescript utility library
 ### How to use
 
 ```bash
-npm install lowdash
+npm install low-dash
 ```
 
 ```ts
-import { typeOf } from "lowdash"
+import { typeOf } from "low-dash"
 console.log(typeOf("133")) //String
 ```
